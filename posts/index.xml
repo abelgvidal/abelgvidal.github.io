@@ -17,8 +17,7 @@
       <pubDate>Fri, 24 Sep 2021 00:16:06 +0200</pubDate>
       
       <guid>https://abelgvidal.github.io/posts/2021-09-24-env-vs-bash-vars/</guid>
-      <description>Environment variables are system-wide. Bash Variables are present only in a bash session.
-d</description>
+      <description>Environment variables are system-wide. Bash Variables are present only in a bash session. more</description>
     </item>
     
   </channel>
