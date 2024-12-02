@@ -1,9 +1,0 @@
-[submodule "themes/hugo-theme-cleanwhite-rsy"]
-	path = themes/hugo-theme-cleanwhite-rsy
-	url = git@github.com:youngkin/hugo-theme-cleanwhite-rsy.git
-[submodule "themes/pickles"]
-	path = themes/pickles
-	url = https://github.com/mismith0227/hugo_theme_pickles
-[submodule "themes/smol"]
-	path = themes/smol
-	url = https://github.com/colorchestra/smol
