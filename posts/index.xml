@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on NoProblemo</title>
+    <link>https://abelgvidal.github.io/posts/</link>
+    <description>Recent content in Posts on NoProblemo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is my custom copyright</copyright>
+    <lastBuildDate>Sun, 15 Dec 2024 20:03:54 +0100</lastBuildDate>
+    <atom:link href="https://abelgvidal.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making Obsidian Talk with Google&#39;s Fancy Wavenet Voices</title>
+      <link>https://abelgvidal.github.io/posts/obsidian-wavenet/</link>
+      <pubDate>Sun, 15 Dec 2024 20:03:54 +0100</pubDate>
+      <guid>https://abelgvidal.github.io/posts/obsidian-wavenet/</guid>
+      <description>Making Obsidian Talk with Google&amp;rsquo;s Fancy Wavenet Voices: A Quick Hack I&amp;rsquo;m sharing a neat little hack I put together. As a hardcore Obsidian user, I was getting frustrated with the available text-to-speech options. I really wanted to use Google&amp;rsquo;s Wavenet voices because they sound amazing, but couldn&amp;rsquo;t find a plugin that did exactly what I wanted. So I sorted it out myself.&#xA;The Problem Sometimes you want your notes read back to you while you&amp;rsquo;re doing other stuff (yes, I&amp;rsquo;m quite the couch potato).</description>
+    </item>
+  </channel>
+</rss>
