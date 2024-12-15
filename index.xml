@@ -20,7 +20,7 @@
         
         <guid>https://abelgvidal.github.io/posts/obsidian-wavenet/</guid>
         <description>NoProblemo https://abelgvidal.github.io/posts/obsidian-wavenet/ -&lt;h1 id=&#34;making-obsidian-talk-with-googles-fancy-wavenet-voices-a-quick-hack&#34;&gt;Making Obsidian Talk with Google&amp;rsquo;s Fancy Wavenet Voices: A Quick Hack&lt;/h1&gt;
-&lt;p&gt;I&amp;rsquo;m sharing a neat little hack I put together. As a hardcore &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian&lt;/a&gt; user, I was getting frustrated with the available text-to-speech options.
+&lt;p&gt;I&amp;rsquo;m sharing a little hack I put together. As a hardcore &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian&lt;/a&gt; user, I was getting frustrated with the available text-to-speech options.
 I really wanted to use Google&amp;rsquo;s Wavenet voices because they sound amazing, but couldn&amp;rsquo;t find a plugin that did exactly what I wanted. So I sorted it out myself.&lt;/p&gt;
 &lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
 &lt;p&gt;Sometimes you want your notes read back to you while you&amp;rsquo;re doing other stuff (yes, I&amp;rsquo;m quite the couch potato). The default TTS options just weren&amp;rsquo;t cutting it for me.
