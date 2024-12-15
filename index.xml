@@ -1,90 +1,116 @@
-<?xml-stylesheet href="/rss.xsl" type="text/xsl"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>NoProblemo</title><link>http://localhost:1313/</link><description>Recent content on NoProblemo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>This is my custom copyrigh</copyright><lastBuildDate>Sun, 15 Dec 2024 20:03:54 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>Making Obsidian Talk with Google's Fancy Wavenet Voices</title><link>http://localhost:1313/posts/obsidian-wavenet/</link><pubDate>Sun, 15 Dec 2024 20:03:54 +0100</pubDate><guid>http://localhost:1313/posts/obsidian-wavenet/</guid><description>NoProblemo http://localhost:1313/posts/obsidian-wavenet/ -&lt;h1 id="making-obsidian-talk-with-googles-fancy-wavenet-voices-a-quick-hack">Making Obsidian Talk with Google&amp;rsquo;s Fancy Wavenet Voices: A Quick Hack&lt;/h1>
-&lt;p>I&amp;rsquo;m sharing a neat little hack I put together. As a hardcore &lt;a href="https://obsidian.md/">Obsidian&lt;/a> user, I was getting frustrated with the available text-to-speech options.
-I really wanted to use Google&amp;rsquo;s Wavenet voices because they sound amazing, but couldn&amp;rsquo;t find a plugin that did exactly what I wanted. So I sorted it out myself.&lt;/p>
-&lt;h2 id="the-problem">The Problem&lt;/h2>
-&lt;p>Sometimes you want your notes read back to you while you&amp;rsquo;re doing other stuff (yes, I&amp;rsquo;m quite the couch potato). The default TTS options just weren&amp;rsquo;t cutting it for me.
-Voices sound weird, robotic etc. I compared text-to-speech api&amp;rsquo;s and found Wavenet&amp;rsquo;s Google voices the coolest at an affordable price.&lt;/p>
-&lt;h2 id="the-solution">The Solution&lt;/h2>
-&lt;p>I cobbled together a hack using Google Cloud&amp;rsquo;s Text-to-Speech API and Obsidian&amp;rsquo;s Shell Commands plugin. Here&amp;rsquo;s how you can do it too (assuming you&amp;rsquo;re on Linux, if not you need some adjustment):&lt;/p>
-&lt;h3 id="1-set-up-google-cloud">1. Set Up Google Cloud&lt;/h3>
-&lt;p>You need to use Google Cloud:&lt;/p>
-&lt;ol>
-&lt;li>Create a new project in Google Cloud Console. Create an account first if you don&amp;rsquo;t have one. Use one project for this purpose to not mix things up.&lt;/li>
-&lt;li>In APIS, enable the Text-to-Speech API for your project&lt;/li>
-&lt;li>Create an IAM service account. Is important to allow only this service, we don&amp;rsquo;t want surprises with the bills.&lt;/li>
-&lt;li>Download the JSON credentials file of this user (keep this safe! Don&amp;rsquo;t push it to github! This is money!)&lt;/li>
-&lt;/ol>
-&lt;h3 id="2-the-python-script-magic">2. The Python Script Magic&lt;/h3>
-&lt;p>Create a file called &lt;code>read.py&lt;/code> and drop this basic code in it:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8b008b;font-weight:bold">from&lt;/span> &lt;span style="color:#008b45;text-decoration:underline">google.cloud&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">import&lt;/span> texttospeech
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8b008b;font-weight:bold">import&lt;/span> &lt;span style="color:#008b45;text-decoration:underline">os&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8b008b;font-weight:bold">import&lt;/span> &lt;span style="color:#008b45;text-decoration:underline">sys&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22"># Point to your credentials file&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>os.environ[&lt;span style="color:#cd5555">&amp;#34;GOOGLE_APPLICATION_CREDENTIALS&amp;#34;&lt;/span>] = &lt;span style="color:#cd5555">&amp;#34;/path/to/your/credentials.json&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22"># Initialize the client&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>client = texttospeech.TextToSpeechClient()
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22"># Read from stdin&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>text = sys.stdin.read()
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22"># Configure the synthesis&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>synthesis_input = texttospeech.SynthesisInput(text=text)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22"># Select the voice you want&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>voice = texttospeech.VoiceSelectionParams(
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> language_code=&lt;span style="color:#cd5555">&amp;#34;en-US&amp;#34;&lt;/span>, &lt;span style="color:#228b22"># Change this to your preferred language&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> name=&lt;span style="color:#cd5555">&amp;#34;en-US-Wavenet-D&amp;#34;&lt;/span> &lt;span style="color:#228b22"># Pick your favorite Wavenet voice&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22"># Configure the audio&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>audio_config = texttospeech.AudioConfig(
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> audio_encoding=texttospeech.AudioEncoding.MP3
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22"># Generate the speech&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>response = client.synthesize_speech(
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#658b00">input&lt;/span>=synthesis_input,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> voice=voice,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> audio_config=audio_config
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22"># Play it using your default audio player&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8b008b;font-weight:bold">import&lt;/span> &lt;span style="color:#008b45;text-decoration:underline">subprocess&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8b008b;font-weight:bold">import&lt;/span> &lt;span style="color:#008b45;text-decoration:underline">tempfile&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8b008b;font-weight:bold">with&lt;/span> tempfile.NamedTemporaryFile(delete=&lt;span style="color:#8b008b;font-weight:bold">False&lt;/span>, suffix=&lt;span style="color:#cd5555">&amp;#39;.mp3&amp;#39;&lt;/span>) &lt;span style="color:#8b008b;font-weight:bold">as&lt;/span> tmp:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> tmp.write(response.audio_content)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> tmp.flush()
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> subprocess.call([&lt;span style="color:#cd5555">&amp;#39;xdg-open&amp;#39;&lt;/span>, tmp.name])
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Make it executable with &lt;code>chmod +x /home/abel/bin/leer.py&lt;/code> (adjust the path to wherever you put it).&lt;/p>
-&lt;p>You will need to install the Google library for this script. You can install it with pip: &lt;code>pip install google-cloud-texttospeec&lt;/code>&lt;/p>
-&lt;h3 id="3-the-obsidian-part">3. The Obsidian Part&lt;/h3>
-&lt;ol>
-&lt;li>Install the &amp;ldquo;Shell commands&amp;rdquo; plugin in Obsidian&lt;/li>
-&lt;li>Add a new shell command with this awesome oneliner:&lt;/li>
-&lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>/usr/bin/xclip -o | python3 /home/abel/bin/leer.py &amp;gt; /dev/null 2&amp;gt;&amp;amp;&lt;span style="color:#b452cd">1&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>What&amp;rsquo;s happening here? &lt;code>xclip -o&lt;/code> grabs whatever text you&amp;rsquo;ve selected, pipes it to our Python script, and we send any output to &lt;code>/dev/null&lt;/code> because we don&amp;rsquo;t want to see clutter output in Obsidian.&lt;/p>
-&lt;p>Of course change the paths, unless your name is same as mine :)&lt;/p>
-&lt;p>In the plugin options give a name to the command like &amp;ldquo;Read with fancy voice&amp;rdquo;.&lt;/p>
-&lt;p>For more comfort, in Obsidian settings hotkeys, associate this command &amp;ldquo;Read with fancy voice&amp;rdquo; with your prefered key binding.
-This is how it looks in my Obsidian:&lt;/p>
-&lt;p>&lt;img src="http://localhost:1313/wavenet.png" alt="obsidian hot key">&lt;/p>
-&lt;h2 id="how-to-use-it">How to Use It&lt;/h2>
-&lt;ol>
-&lt;li>Select some text in Obsidian and copy it (ctrl+c)&lt;/li>
-&lt;li>Trigger the shell command (I set up a hotkey)&lt;/li>
-&lt;li>Listen to your notes in a lovely Wavenet voice!&lt;/li>
-&lt;/ol>
-&lt;h2 id="some-notes">Some Notes&lt;/h2>
-&lt;ul>
-&lt;li>You&amp;rsquo;ll need &lt;code>xclip&lt;/code> installed (&lt;code>sudo apt install xclip&lt;/code> if you don&amp;rsquo;t have it)&lt;/li>
-&lt;li>Keep an eye on your Google Cloud usage - while there is a free tier. Pricing is per character, there is a free tier and it&amp;rsquo;s not unlimited and it consumes SSML tags, not only words.&lt;/li>
-&lt;li>You can find a full list of available WaveNet voices and their language codes in the Google Cloud documentation: &lt;a href="https://cloud.google.com/text-to-speech/docs/voices">https://cloud.google.com/text-to-speech/docs/voices&lt;/a>.&lt;/li>
-&lt;li>In case you find yourself needing this in two or more languages, you may add an extra argument to the script and create different obsidian commands for every language.&lt;/li>
-&lt;/ul>
-&lt;p>That&amp;rsquo;s it! Now you can have Google&amp;rsquo;s premium voices read your Obsidian notes. Let me know if you make any cool modifications to this setup!&lt;/p>
-&lt;p>&lt;em>P.S. Remember to keep your Google Cloud credentials safe and never share them!&lt;/em>&lt;/p>
-- http://localhost:1313/posts/obsidian-wavenet/ - This is my custom copyrigh</description></item></channel></rss>
+<?xml-stylesheet href="/rss.xsl" type="text/xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NoProblemo</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on NoProblemo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This is my custom copyrigh</copyright>
+    <lastBuildDate>Sun, 15 Dec 2024 20:03:54 +0100</lastBuildDate>
+    
+        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>Making Obsidian Talk with Google&#39;s Fancy Wavenet Voices</title>
+        <link>http://localhost:1313/posts/obsidian-wavenet/</link>
+        <pubDate>Sun, 15 Dec 2024 20:03:54 +0100</pubDate>
+        
+        <guid>http://localhost:1313/posts/obsidian-wavenet/</guid>
+        <description>NoProblemo http://localhost:1313/posts/obsidian-wavenet/ -&lt;h1 id=&#34;making-obsidian-talk-with-googles-fancy-wavenet-voices-a-quick-hack&#34;&gt;Making Obsidian Talk with Google&amp;rsquo;s Fancy Wavenet Voices: A Quick Hack&lt;/h1&gt;
+&lt;p&gt;I&amp;rsquo;m sharing a neat little hack I put together. As a hardcore &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian&lt;/a&gt; user, I was getting frustrated with the available text-to-speech options.
+I really wanted to use Google&amp;rsquo;s Wavenet voices because they sound amazing, but couldn&amp;rsquo;t find a plugin that did exactly what I wanted. So I sorted it out myself.&lt;/p&gt;
+&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;Sometimes you want your notes read back to you while you&amp;rsquo;re doing other stuff (yes, I&amp;rsquo;m quite the couch potato). The default TTS options just weren&amp;rsquo;t cutting it for me.
+Voices sound weird, robotic etc. I compared text-to-speech api&amp;rsquo;s and found Wavenet&amp;rsquo;s Google voices the coolest at an affordable price.&lt;/p&gt;
+&lt;h2 id=&#34;the-solution&#34;&gt;The Solution&lt;/h2&gt;
+&lt;p&gt;I cobbled together a hack using Google Cloud&amp;rsquo;s Text-to-Speech API and Obsidian&amp;rsquo;s Shell Commands plugin. Here&amp;rsquo;s how you can do it too (assuming you&amp;rsquo;re on Linux, if not you need some adjustment):&lt;/p&gt;
+&lt;h3 id=&#34;1-set-up-google-cloud&#34;&gt;1. Set Up Google Cloud&lt;/h3&gt;
+&lt;p&gt;You need to use Google Cloud:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a new project in Google Cloud Console. Create an account first if you don&amp;rsquo;t have one. Use one project for this purpose to not mix things up.&lt;/li&gt;
+&lt;li&gt;In APIS, enable the Text-to-Speech API for your project&lt;/li&gt;
+&lt;li&gt;Create an IAM service account. Is important to allow only this service, we don&amp;rsquo;t want surprises with the bills.&lt;/li&gt;
+&lt;li&gt;Download the JSON credentials file of this user (keep this safe! Don&amp;rsquo;t push it to github! This is money!)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2-the-python-script-magic&#34;&gt;2. The Python Script Magic&lt;/h3&gt;
+&lt;p&gt;Create a file called &lt;code&gt;read.py&lt;/code&gt;  and drop this basic code in it:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#008b45;text-decoration:underline&#34;&gt;google.cloud&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; texttospeech
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#008b45;text-decoration:underline&#34;&gt;os&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#008b45;text-decoration:underline&#34;&gt;sys&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;# Point to your credentials file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;os.environ[&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;GOOGLE_APPLICATION_CREDENTIALS&amp;#34;&lt;/span&gt;] = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;/path/to/your/credentials.json&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;# Initialize the client&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;client = texttospeech.TextToSpeechClient()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;# Read from stdin&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;text = sys.stdin.read()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;# Configure the synthesis&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;synthesis_input = texttospeech.SynthesisInput(text=text)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;# Select the voice you want&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;voice = texttospeech.VoiceSelectionParams(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    language_code=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;en-US&amp;#34;&lt;/span&gt;,  &lt;span style=&#34;color:#228b22&#34;&gt;# Change this to your preferred language&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    name=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;en-US-Wavenet-D&amp;#34;&lt;/span&gt;  &lt;span style=&#34;color:#228b22&#34;&gt;# Pick your favorite Wavenet voice&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;# Configure the audio&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;audio_config = texttospeech.AudioConfig(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    audio_encoding=texttospeech.AudioEncoding.MP3
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;# Generate the speech&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;response = client.synthesize_speech(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#658b00&#34;&gt;input&lt;/span&gt;=synthesis_input,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    voice=voice,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    audio_config=audio_config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;# Play it using your default audio player&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#008b45;text-decoration:underline&#34;&gt;subprocess&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#008b45;text-decoration:underline&#34;&gt;tempfile&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;with&lt;/span&gt; tempfile.NamedTemporaryFile(delete=&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;False&lt;/span&gt;, suffix=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;.mp3&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;as&lt;/span&gt; tmp:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    tmp.write(response.audio_content)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    tmp.flush()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    subprocess.call([&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;xdg-open&amp;#39;&lt;/span&gt;, tmp.name])
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Make it executable with &lt;code&gt;chmod +x /home/abel/bin/leer.py&lt;/code&gt; (adjust the path to wherever you put it).&lt;/p&gt;
+&lt;p&gt;You will need to install the Google library for this script. You can install it with pip: &lt;code&gt;pip install google-cloud-texttospeec&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3-the-obsidian-part&#34;&gt;3. The Obsidian Part&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Install the &amp;ldquo;Shell commands&amp;rdquo; plugin in Obsidian&lt;/li&gt;
+&lt;li&gt;Add a new shell command with this awesome oneliner:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/usr/bin/xclip -o | python3 /home/abel/bin/leer.py &amp;gt; /dev/null 2&amp;gt;&amp;amp;&lt;span style=&#34;color:#b452cd&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;What&amp;rsquo;s happening here? &lt;code&gt;xclip -o&lt;/code&gt; grabs whatever text you&amp;rsquo;ve selected, pipes it to our Python script, and we send any output to &lt;code&gt;/dev/null&lt;/code&gt; because we don&amp;rsquo;t want to see clutter output in Obsidian.&lt;/p&gt;
+&lt;p&gt;Of course change the paths, unless your name is same as mine :)&lt;/p&gt;
+&lt;p&gt;In the plugin options give a name to the command like &amp;ldquo;Read with fancy voice&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;For more comfort, in Obsidian settings hotkeys, associate this command &amp;ldquo;Read with fancy voice&amp;rdquo; with your prefered key binding.
+This is how it looks in my Obsidian:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/wavenet.png&#34; alt=&#34;obsidian hot key&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;how-to-use-it&#34;&gt;How to Use It&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Select some text in Obsidian and copy it (ctrl+c)&lt;/li&gt;
+&lt;li&gt;Trigger the shell command (I set up a hotkey)&lt;/li&gt;
+&lt;li&gt;Listen to your notes in a lovely Wavenet voice!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;some-notes&#34;&gt;Some Notes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;You&amp;rsquo;ll need &lt;code&gt;xclip&lt;/code&gt; installed (&lt;code&gt;sudo apt install xclip&lt;/code&gt; if you don&amp;rsquo;t have it)&lt;/li&gt;
+&lt;li&gt;Keep an eye on your Google Cloud usage - while there is a free tier. Pricing is per character, there is a free tier and it&amp;rsquo;s not unlimited and it consumes SSML tags, not only words.&lt;/li&gt;
+&lt;li&gt;You can find a full list of available WaveNet voices and their language codes in the Google Cloud documentation: &lt;a href=&#34;https://cloud.google.com/text-to-speech/docs/voices&#34;&gt;https://cloud.google.com/text-to-speech/docs/voices&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;In case you find yourself needing this in two or more languages, you may add an extra argument to the script and create different obsidian commands for every language.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That&amp;rsquo;s it! Now you can have Google&amp;rsquo;s premium voices read your Obsidian notes. Let me know if you make any cool modifications to this setup!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;P.S. Remember to keep your Google Cloud credentials safe and never share them!&lt;/em&gt;&lt;/p&gt;
+- http://localhost:1313/posts/obsidian-wavenet/ - This is my custom copyrigh</description>
+        </item>
+    
+    
+  </channel>
+</rss> 
