@@ -17,6 +17,10 @@
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://abelgvidal.github.io/about/</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://abelgvidal.github.io/categories/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
