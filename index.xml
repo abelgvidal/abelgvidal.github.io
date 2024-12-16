@@ -75,7 +75,7 @@ I really wanted to use Google&amp;rsquo;s Wavenet voices because they sound amaz
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        text_to_speech(text)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;else&lt;/span&gt;:
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#658b00&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;No text received.&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Make it executable with &lt;code&gt;chmod +x /home/abel/bin/leer.py&lt;/code&gt; (adjust the path to wherever you put it).&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Make it executable with &lt;code&gt;chmod +x /home/abel/bin/read.py&lt;/code&gt; (adjust the path to wherever you put it).&lt;/p&gt;
 &lt;p&gt;You will need to install the Google library for this script. You can install it with pip: &lt;code&gt;pip install google-cloud-texttospeec&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&#34;3-the-obsidian-part&#34;&gt;3. The Obsidian Part&lt;/h3&gt;
 &lt;ol&gt;
