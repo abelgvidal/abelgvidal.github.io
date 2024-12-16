@@ -103,6 +103,7 @@ This is how it looks in my Obsidian:&lt;/p&gt;
 &lt;li&gt;Keep an eye on your Google Cloud usage - while there is a free tier. Pricing is per character, there is a free tier and it&amp;rsquo;s not unlimited and it consumes SSML tags, not only words.&lt;/li&gt;
 &lt;li&gt;You can find a full list of available WaveNet voices and their language codes in the Google Cloud documentation: &lt;a href=&#34;https://cloud.google.com/text-to-speech/docs/voices&#34;&gt;https://cloud.google.com/text-to-speech/docs/voices&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;In case you find yourself needing this in two or more languages, you may add an extra argument to the script and create different obsidian commands for every language.&lt;/li&gt;
+&lt;li&gt;This may not work if you are using non-native obsidian in linux like flatpak.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;That&amp;rsquo;s it! Now you can have Google&amp;rsquo;s premium voices read your Obsidian notes. Let me know if you make any cool modifications to this setup!&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;P.S. Remember to keep your Google Cloud credentials safe and never share them!&lt;/em&gt;&lt;/p&gt;
