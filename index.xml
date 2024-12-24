@@ -7,9 +7,70 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This is my custom copyright</copyright>
-    <lastBuildDate>Sun, 15 Dec 2024 20:03:54 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 23 Dec 2024 20:03:54 +0100</lastBuildDate>
     
         <atom:link href="https://abelgvidal.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>Making Obsidian Talk with Google&#39;s Fancy Wavenet Voices</title>
+        <link>https://abelgvidal.github.io/posts/eticaparaingenieros/</link>
+        <pubDate>Mon, 23 Dec 2024 20:03:54 +0100</pubDate>
+        
+        <guid>https://abelgvidal.github.io/posts/eticaparaingenieros/</guid>
+        <description>NoProblemo https://abelgvidal.github.io/posts/eticaparaingenieros/ -&lt;h1 id=&#34;critical-summary-of-professional-ethics-in-engineering&#34;&gt;Critical Summary of Professional Ethics in Engineering&lt;/h1&gt;
+&lt;p&gt;This is a review of the book &amp;ldquo;Ética para ingenieros&amp;rdquo; by Galo Bilbao Alberdi, Francisco Javier Fuertes Pérez and José Mª Guibert Ucín.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;images/posts/eticaing.jpg&#34; alt=&#34;Ética para ingenieros&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;the-engineering-profession&#34;&gt;The Engineering Profession&lt;/h2&gt;
+&lt;p&gt;Different sociological perspectives explore the meaning of professions, from traditional occupations like doctors or lawyers to modern professions requiring university education. The fundamental aspect of a profession is its unique service to society, a vocation that has intensified with modernity through &amp;ldquo;professionalization.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;There are notable concerns about the excesses of this process, such as the obsession with titles rather than service to society, distinguishing between &amp;ldquo;bad professionalism&amp;rdquo; and &amp;ldquo;good professionalism&amp;rdquo; oriented toward the community. It&amp;rsquo;s crucial to avoid corporatism typical of professions like engineering, recognizing that engineers&amp;rsquo; contributions are not sufficient without collaboration from other parts of society.&lt;/p&gt;
+&lt;p&gt;Engineers serve as a bridge between pure sciences and humanities. Social benefits don&amp;rsquo;t materialize in the engineering field per se, but in the application of technologies to other professions, as evidenced during the COVID-19 pandemic with the possibility of continuing education thanks to available technology.&lt;/p&gt;
+&lt;h2 id=&#34;analysis-of-social-reality-from-the-technological-revolution&#34;&gt;Analysis of Social Reality from the Technological Revolution&lt;/h2&gt;
+&lt;p&gt;Engineering, especially the internet, has accelerated globalization by eliminating barriers in the exchange of ideas and goods. This process links to Adam Smith&amp;rsquo;s liberal ideas, adding Technology as a fourth element alongside Land, Labor, and Capital. In this context, technological knowledge becomes key to social success, explaining the profession&amp;rsquo;s growing prestige.&lt;/p&gt;
+&lt;p&gt;Ethics in relation to intellectual property illustrates the contradiction between engineers&amp;rsquo; interests as professionals and as consumers. Informational capitalism, where technology ownership generates economic polarization, also creates new global job opportunities.&lt;/p&gt;
+&lt;p&gt;There are significant concerns about the excesses of purely technocratic democracy, where human values can be lost in favor of technical efficiency, calling for more effective regulation of ICTs.&lt;/p&gt;
+&lt;h2 id=&#34;ethics-and-the-technoscientific-phenomenon&#34;&gt;Ethics and the Technoscientific Phenomenon&lt;/h2&gt;
+&lt;p&gt;STS (Science, Technology, and Society) studies developed in the West since the sixties present multiple perspectives: activists questioning technology&amp;rsquo;s benefits, academics promoting multidisciplinary education, and those seeking a more integrative vision of science.&lt;/p&gt;
+&lt;p&gt;Important currents include the &amp;ldquo;strong program&amp;rdquo; explaining science in terms of social interests, the empirical program of relativism, and Actor-Network Theory. These studies warn about the risk of science, without proper contextualization, moving away from social interest.&lt;/p&gt;
+&lt;p&gt;Evaluations to prevent social harm must delimit engineers&amp;rsquo; and scientists&amp;rsquo; responsibilities in a balanced way. Different visions of science range from spontaneous to totalizing response, with the &amp;ldquo;critical response&amp;rdquo; emerging as most appropriate.&lt;/p&gt;
+&lt;h2 id=&#34;professional-ethics-and-its-guiding-principles&#34;&gt;Professional Ethics and Its Guiding Principles&lt;/h2&gt;
+&lt;p&gt;The moral phenomenon operates in two dimensions: good and evil (pursuit of happiness) and justice and fulfillment of duty. These translate into professional ethics and deontology, representing moral maximums and minimums respectively.&lt;/p&gt;
+&lt;p&gt;Two common errors emerge: moralism (applying absolute ethical terms without considering professional characteristics) and the separatist thesis (considering that a profession is exempt from universal ethical rules).&lt;/p&gt;
+&lt;p&gt;The guiding principles are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Beneficence&lt;/strong&gt;: Prioritizing the profession&amp;rsquo;s internal goods over external ones, avoiding paternalism&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Autonomy&lt;/strong&gt;: Includes self-election, self-legislation, authenticity, and self-decision&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Justice&lt;/strong&gt;: Treating everyone with equity, without seeking self-interest&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;risk-society&#34;&gt;Risk Society&lt;/h2&gt;
+&lt;p&gt;Risk management in contemporary engineering is characterized by its globalizing nature and regulatory complexity, with three main approaches:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Technical management: Evaluation using formulas to determine acceptable risks&lt;/li&gt;
+&lt;li&gt;Psychological management: Analysis of technically acceptable but humanly unacceptable risks&lt;/li&gt;
+&lt;li&gt;Sociological management: Contextualization of risk in historical and social framework&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Risk exchanges include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Displacement: Change between similar risks&lt;/li&gt;
+&lt;li&gt;Substitution: Change to different type of risk for the same population&lt;/li&gt;
+&lt;li&gt;Transfer: Same type of risk for different population&lt;/li&gt;
+&lt;li&gt;Transformation: Change in both type and affected population&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;virtue-prudence&#34;&gt;Virtue: Prudence&lt;/h2&gt;
+&lt;p&gt;The concept of prudence in ethics has evolved from the Aristotelian view that considers it fundamental for the contingent, to more modern interpretations by Kant and Smith who see it as a practical skill separate from morality.&lt;/p&gt;
+&lt;p&gt;Prudence develops in contexts of uncertainty, requiring flexibility and ethical deliberation between means and ends. Its exercise integrates deontological and consequentialist models, seeking to balance universal values with situational particularities.&lt;/p&gt;
+&lt;h2 id=&#34;decision-theory&#34;&gt;Decision Theory&lt;/h2&gt;
+&lt;p&gt;Tools for addressing ethical and professional dilemmas include decision analysis under certainty, risk, and ignorance. Game theory provides frameworks for understanding conflicts between self-interest and cooperation, with the prisoner&amp;rsquo;s dilemma as a key example.&lt;/p&gt;
+&lt;p&gt;Important contributions include Gauthier&amp;rsquo;s work on rationality and cooperation, and Axelrod&amp;rsquo;s studies on cooperative strategies like &amp;ldquo;tit for tat.&amp;rdquo; The effectiveness of markets in achieving the common good remains a critical question in economics and politics.&lt;/p&gt;
+&lt;h2 id=&#34;responsibility&#34;&gt;Responsibility&lt;/h2&gt;
+&lt;p&gt;Professional ethics in engineering goes beyond abstract norms, constituting a fundamental element that defines its social impact. Engineers must answer to multiple actors: companies, colleagues, clients, suppliers, and society.&lt;/p&gt;
+&lt;p&gt;Balancing corporate loyalty with legal compliance and social responsibility is crucial, especially given growing inequalities and environmental crises. Commitment must exceed mere legal compliance, promoting an active role in building a more equitable future.&lt;/p&gt;
+&lt;h2 id=&#34;collective-normativities&#34;&gt;Collective Normativities&lt;/h2&gt;
+&lt;p&gt;Deontological codes serve as mechanisms of professional self-regulation, promoting debate about professional impact and establishing international standards. However, they face criticism for their possible rigidity or superficiality.&lt;/p&gt;
+&lt;p&gt;In business, implementing ethics faces challenges including public distrust and the risk of instrumentalizing values. The public sector emphasizes principles like integrity and transparency, highlighting the need to strengthen moral communities within institutions.&lt;/p&gt;
+- https://abelgvidal.github.io/posts/eticaparaingenieros/ - This is my custom copyright</description>
+        </item>
     
     
     
