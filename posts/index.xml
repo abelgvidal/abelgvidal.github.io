@@ -21,7 +21,7 @@
       <link>https://abelgvidal.github.io/posts/obsidian-wavenet/</link>
       <pubDate>Sun, 15 Dec 2024 20:03:54 +0100</pubDate>
       <guid>https://abelgvidal.github.io/posts/obsidian-wavenet/</guid>
-      <description>Making Obsidian Talk with Google&amp;rsquo;s Fancy Wavenet Voices: A Quick Hack I&amp;rsquo;m sharing a little hack I put together. As a hardcore Obsidian user, I was getting frustrated with the available text-to-speech options. I really wanted to use Google&amp;rsquo;s Wavenet voices because they sound amazing, but couldn&amp;rsquo;t find a plugin that did exactly what I wanted. So I sorted it out myself.&#xA;I cobbled together a hack using Google Cloud&amp;rsquo;s Text-to-Speech API and Obsidian&amp;rsquo;s Shell Commands plugin.</description>
+      <description>I&amp;rsquo;m sharing a little hack I put together. As a hardcore Obsidian user, I was getting frustrated with the available text-to-speech options. I really wanted to use Google&amp;rsquo;s Wavenet voices because they sound amazing, but couldn&amp;rsquo;t find a plugin that did exactly what I wanted. So I sorted it out myself.&#xA;I cobbled together a hack using Google Cloud&amp;rsquo;s Text-to-Speech API and Obsidian&amp;rsquo;s Shell Commands plugin. Here&amp;rsquo;s how you can do it too (assuming you&amp;rsquo;re on Linux, if not you need some adjustment):</description>
     </item>
   </channel>
 </rss>
