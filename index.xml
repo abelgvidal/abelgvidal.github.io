@@ -1,12 +1,12 @@
 <?xml-stylesheet href="/rss.xsl" type="text/xsl"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>NoProblemo</title>
+    <title>lpsz</title>
     <link>https://abelgvidal.github.io/</link>
-    <description>Recent content on NoProblemo</description>
+    <description>Recent content on lpsz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>This is my custom copyright</copyright>
+    <copyright>Abel González @</copyright>
     <lastBuildDate>Mon, 23 Dec 2024 20:03:54 +0100</lastBuildDate>
     
         <atom:link href="https://abelgvidal.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -19,7 +19,7 @@
         <pubDate>Mon, 23 Dec 2024 20:03:54 +0100</pubDate>
         
         <guid>https://abelgvidal.github.io/posts/eticaparaingenieros/</guid>
-        <description>NoProblemo https://abelgvidal.github.io/posts/eticaparaingenieros/ -&lt;p&gt;These are my reading notes for the book &amp;ldquo;Ética para ingenieros&amp;rdquo; by Galo Bilbao Alberdi, Francisco Javier Fuertes Pérez and José Mª Guibert Ucín.&lt;/p&gt;
+        <description>lpsz https://abelgvidal.github.io/posts/eticaparaingenieros/ -&lt;p&gt;These are my reading notes for the book &amp;ldquo;Ética para ingenieros&amp;rdquo; by Galo Bilbao Alberdi, Francisco Javier Fuertes Pérez and José Mª Guibert Ucín.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://abelgvidal.github.io/images/posts/eticaing.jpg&#34; alt=&#34;Ética para ingenieros&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;the-engineering-profession&#34;&gt;The Engineering Profession&lt;/h2&gt;
 &lt;p&gt;Different sociological perspectives explore the meaning of professions, from traditional occupations like doctors or lawyers to modern professions requiring university education. The fundamental aspect of a profession is its unique service to society, a vocation that has intensified with modernity through &amp;ldquo;professionalization.&amp;rdquo;&lt;/p&gt;
@@ -68,7 +68,7 @@
 &lt;h2 id=&#34;collective-normativities&#34;&gt;Collective Normativities&lt;/h2&gt;
 &lt;p&gt;Deontological codes serve as mechanisms of professional self-regulation, promoting debate about professional impact and establishing international standards. However, they face criticism for their possible rigidity or superficiality.&lt;/p&gt;
 &lt;p&gt;In business, implementing ethics faces challenges including public distrust and the risk of instrumentalizing values. The public sector emphasizes principles like integrity and transparency, highlighting the need to strengthen moral communities within institutions.&lt;/p&gt;
-- https://abelgvidal.github.io/posts/eticaparaingenieros/ - This is my custom copyright</description>
+- https://abelgvidal.github.io/posts/eticaparaingenieros/ - Abel González @</description>
         </item>
     
     
@@ -79,7 +79,7 @@
         <pubDate>Sun, 15 Dec 2024 20:03:54 +0100</pubDate>
         
         <guid>https://abelgvidal.github.io/posts/obsidian-wavenet/</guid>
-        <description>NoProblemo https://abelgvidal.github.io/posts/obsidian-wavenet/ -&lt;h1 id=&#34;making-obsidian-talk-with-googles-fancy-wavenet-voices-a-quick-hack&#34;&gt;Making Obsidian Talk with Google&amp;rsquo;s Fancy Wavenet Voices: A Quick Hack&lt;/h1&gt;
+        <description>lpsz https://abelgvidal.github.io/posts/obsidian-wavenet/ -&lt;h1 id=&#34;making-obsidian-talk-with-googles-fancy-wavenet-voices-a-quick-hack&#34;&gt;Making Obsidian Talk with Google&amp;rsquo;s Fancy Wavenet Voices: A Quick Hack&lt;/h1&gt;
 &lt;p&gt;I&amp;rsquo;m sharing a little hack I put together. As a hardcore &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian&lt;/a&gt; user, I was getting frustrated with the available text-to-speech options.
 I really wanted to use Google&amp;rsquo;s Wavenet voices because they sound amazing, but couldn&amp;rsquo;t find a plugin that did exactly what I wanted. So I sorted it out myself.&lt;/p&gt;
 &lt;p&gt;I cobbled together a hack using Google Cloud&amp;rsquo;s Text-to-Speech API and Obsidian&amp;rsquo;s Shell Commands plugin. Here&amp;rsquo;s how you can do it too (assuming you&amp;rsquo;re on Linux, if not you need some adjustment):&lt;/p&gt;
@@ -166,7 +166,7 @@ This is how it looks in my Obsidian:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;That&amp;rsquo;s it! Now you can have Google&amp;rsquo;s premium voices read your Obsidian notes. Let me know if you make any cool modifications to this setup!&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;P.S. Remember to keep your Google Cloud credentials safe and never share them!&lt;/em&gt;&lt;/p&gt;
-- https://abelgvidal.github.io/posts/obsidian-wavenet/ - This is my custom copyright</description>
+- https://abelgvidal.github.io/posts/obsidian-wavenet/ - Abel González @</description>
         </item>
     
     
