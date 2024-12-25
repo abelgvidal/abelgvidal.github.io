@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>lpsz</title>
-        <link>https://abelgvidal.github.io/categories/</link>
+        <link>https://abelgvidal.github.io/tags/books/</link>
         <description>Latest blog posts from lpsz</description>
 
         
@@ -18,9 +18,11 @@
         
 
         
+        <lastBuildDate>Mon, 23 Dec 2024 20:03:54 +0100</lastBuildDate>
+        
 
         
-        <atom:link href="https://abelgvidal.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://abelgvidal.github.io/tags/books/index.xml" rel="self" type="application/rss+xml" />
         
 
         
