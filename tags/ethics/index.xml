@@ -49,13 +49,12 @@ I cobbled together a hack using Google Cloud’s Text-to-Speech API and Obsidian
         </item>
             
         <item>
-          <title>Recursion in Bash</title>
+          <title></title>
           <link>https://abelgvidal.github.io/posts/recursive-bash/</link>
-          <pubDate>Sun, 15 Dec 2024 20:03:54 +0100</pubDate>
+          <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
           
           <guid>https://abelgvidal.github.io/posts/recursive-bash/</guid>
-          <description>Recursion in Bash Recursion in Bash commands can be useful, especially in debugging and understanding how the shell interprets inputs. This guide focuses on recursive commands like type, eval, and builtin and compares them with non-recursive ones like ls and echo. Here’s what you need to know.
-What is Recursion in Bash? Some Bash commands call themselves when processing their inputs. For example, type can take itself as an argument and repeatedly resolve its behavior until it provides a final answer.</description>
+          <description>&mdash; title: &quot;Why 'type type type type' runs three times in Bash&quot; date: 2024-12-30 description: &quot;A deep dive into why the Bash 'type' command exhibits this peculiar behavior&quot; tags: [&quot;bash&quot;, &quot;linux&quot;, &quot;shell&quot;, &quot;programming&quot;] categories: [&quot;Technical&quot;, &quot;Shell Scripting&quot;] draft = false &mdash; # Why <code>type type type type</code> executes the command three times In Bash, when we run the command <code>type type type type</code>, we observe a peculiar behavior: it executes three times instead of once or four times.</description>
         </item>
             
         <item>

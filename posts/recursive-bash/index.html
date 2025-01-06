@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>lpsz - Recursion in Bash </title>
+    <title>lpsz </title>
     <link rel="stylesheet" type="text/css" href="/css/fonts.css">
     <link rel="stylesheet" type="text/css" href="/css/fontawesome.css">
     
@@ -52,88 +52,73 @@
     <main>
         <article>
             
-            <h1 class="page-title blog">Recursion in Bash</h1>
+            <h1 class="page-title blog"></h1>
             
-                <p class="blog-post-info">Posted: <time>2024-12-15</time>
+                <p class="blog-post-info">Posted: <time>0001-01-01</time>
                 
 
-
-    <span class="blog-taxonomy-info"> &nbsp; | &nbsp; Tags: 
-        
-        
-        
-        <a class="blog-taxonomy-info" href="/tags/bash">bash</a>, <a class="blog-taxonomy-info" href="/tags/linux">linux</a>
-    </span>
 
 </p>
 
                 <div class="blog-post-content">
-                <h1 id="recursion-in-bash">Recursion in Bash</h1>
-<p>Recursion in Bash commands can be useful, especially in debugging and understanding how the shell interprets inputs. This guide focuses on recursive commands like <code>type</code>, <code>eval</code>, and <code>builtin</code> and compares them with non-recursive ones like <code>ls</code> and <code>echo</code>. Here’s what you need to know.</p>
-<hr>
-<h2 id="what-is-recursion-in-bash">What is Recursion in Bash?</h2>
-<p>Some Bash commands call themselves when processing their inputs. For example, <code>type</code> can take itself as an argument and repeatedly resolve its behavior until it provides a final answer.</p>
-<hr>
-<h2 id="examples-of-recursive-commands">Examples of Recursive Commands</h2>
-<h3 id="1-type">1. <code>type</code></h3>
-<p><code>type</code> tells you how a command is interpreted (alias, builtin, function, or executable).</p>
-<h4 id="example">Example:</h4>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ <span style="color:#658b00">type</span> <span style="color:#658b00">type</span> <span style="color:#658b00">type</span>
-</span></span><span style="display:flex;"><span><span style="color:#658b00">type</span> is a shell <span style="color:#658b00">builtin</span>
-</span></span><span style="display:flex;"><span><span style="color:#658b00">type</span> is a shell <span style="color:#658b00">builtin</span>
-</span></span><span style="display:flex;"><span><span style="color:#658b00">type</span> is a shell <span style="color:#658b00">builtin</span>
-</span></span></code></pre></div><p>Each <code>type</code> examines the next, creating a chain of introspection.</p>
-<h3 id="2-eval">2. <code>eval</code></h3>
-<p><code>eval</code> executes arguments as shell commands. If the input contains <code>eval</code>, it processes recursively.</p>
-<h4 id="example-1">Example:</h4>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ <span style="color:#658b00">eval</span> <span style="color:#cd5555">&#39;eval echo Hello&#39;</span>
-</span></span><span style="display:flex;"><span>Hello
-</span></span></code></pre></div><p>The first <code>eval</code> processes the inner <code>eval</code>, which then executes <code>echo</code>.</p>
-<h3 id="3-builtin">3. <code>builtin</code></h3>
-<p><code>builtin</code> ensures that commands are executed as builtins, even if overridden by functions or aliases.</p>
-<h4 id="example-2">Example:</h4>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ <span style="color:#658b00">builtin</span> <span style="color:#658b00">builtin</span> <span style="color:#658b00">builtin</span> <span style="color:#658b00">echo</span> Hi
-</span></span><span style="display:flex;"><span>Hi
-</span></span></code></pre></div><p>Each <code>builtin</code> enforces the next to run as a shell builtin.</p>
-<hr>
-<h2 id="non-recursive-commands">Non-Recursive Commands</h2>
-<h3 id="1-ls">1. <code>ls</code></h3>
-<p>Lists files and directories. It doesn’t introspect its arguments.</p>
-<h4 id="example-3">Example:</h4>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ls ls
-</span></span><span style="display:flex;"><span>ls: cannot access <span style="color:#cd5555">&#39;ls&#39;</span>: No such file or directory
-</span></span></code></pre></div><h3 id="2-echo">2. <code>echo</code></h3>
-<p>Prints arguments directly.</p>
-<h4 id="example-4">Example:</h4>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ <span style="color:#658b00">echo</span> <span style="color:#658b00">echo</span>
-</span></span><span style="display:flex;"><span><span style="color:#658b00">echo</span>
-</span></span></code></pre></div><h3 id="3-dirs">3. <code>dirs</code></h3>
-<p>Manages the directory stack without recursion.</p>
-<h4 id="example-5">Example:</h4>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ <span style="color:#658b00">dirs</span> <span style="color:#658b00">dirs</span>
-</span></span><span style="display:flex;"><span>bash: dirs: dirs: invalid option
-</span></span><span style="display:flex;"><span>dirs: usage: <span style="color:#658b00">dirs</span> [-clpv] [+N] [-N]
-</span></span></code></pre></div><hr>
-<h2 id="why-does-this-matter">Why Does This Matter?</h2>
+                <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: &#34;Why &#39;type type type type&#39; runs three times in Bash&#34;
+</span></span><span style="display:flex;"><span>date: 2024-12-30
+</span></span><span style="display:flex;"><span>description: &#34;A deep dive into why the Bash &#39;type&#39; command exhibits this peculiar behavior&#34;
+</span></span><span style="display:flex;"><span>tags: [&#34;bash&#34;, &#34;linux&#34;, &#34;shell&#34;, &#34;programming&#34;]
+</span></span><span style="display:flex;"><span>categories: [&#34;Technical&#34;, &#34;Shell Scripting&#34;]
+</span></span><span style="display:flex;"><span>draft = false
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000080;font-weight:bold"># Why `type type type type` executes the command three times
+</span></span></span><span style="display:flex;"><span><span style="color:#000080;font-weight:bold"></span>
+</span></span><span style="display:flex;"><span>In Bash, when we run the command <span style="color:#cd5555">`type type type type`</span>, we observe a peculiar behavior: it executes three times instead of once or four times. This phenomenon is fascinating and is due to how Bash processes arguments and how the <span style="color:#cd5555">`type`</span> command specifically works.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#800080;font-weight:bold">## The behavior of `type`
+</span></span></span><span style="display:flex;"><span><span style="color:#800080;font-weight:bold"></span>
+</span></span><span style="display:flex;"><span>The <span style="color:#cd5555">`type`</span> command is a Bash builtin used to determine how Bash would interpret a command name. When we execute:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>```bash
+</span></span><span style="display:flex;"><span>type type type type
+</span></span></code></pre></div><p>We get an output similar to this:</p>
+<pre tabindex="0"><code>type is a shell builtin
+type is a shell builtin
+type is a shell builtin
+</code></pre><h2 id="the-reason-behind-the-behavior">The reason behind the behavior</h2>
+<p>The behavior can be explained by analyzing how Bash processes the command line:</p>
 <ol>
-<li><strong>Debugging</strong>: Recursive commands help understand how the shell resolves inputs. For example, <code>type</code> can show if a command is an alias, function, or executable.</li>
-<li><strong>Avoiding Loops</strong>: Recursive aliases can create infinite loops if not carefully managed.
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ <span style="color:#658b00">alias</span> <span style="color:#00688b">test</span>=<span style="color:#cd5555">&#39;echo test &amp;&amp; test&#39;</span>
-</span></span><span style="display:flex;"><span>$ <span style="color:#658b00">test</span>
-</span></span></code></pre></div></li>
+<li>First, Bash identifies the initial <code>type</code> command.</li>
+<li>Everything that follows is considered as arguments for that command.</li>
+<li><strong>Key point</strong>: The <code>type</code> command processes each argument independently, trying to determine what kind of command each one is.</li>
 </ol>
-<p>test
-test
-test
-&hellip;</p>
-<pre tabindex="0"><code>3. **Scripting Efficiency**: Knowing which commands are recursive can help optimize complex scripts.
+<p>The reason we see three outputs and not four is due to left-to-right argument processing:</p>
+<ol>
+<li>The first <code>type</code> is the command that will be executed</li>
+<li>The following three <code>type</code> words are arguments to the first <code>type</code></li>
+</ol>
+<h2 id="why-this-doesnt-happen-with-other-commands">Why this doesn&rsquo;t happen with other commands</h2>
+<p>This behavior is specific to <code>type</code> because it&rsquo;s a command designed to analyze command names. Let&rsquo;s compare with other commands:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#658b00">echo</span> <span style="color:#658b00">echo</span> <span style="color:#658b00">echo</span> <span style="color:#658b00">echo</span>
+</span></span></code></pre></div><p>This would produce:</p>
+<pre tabindex="0"><code>echo echo echo
+</code></pre><p>The difference lies in that <code>echo</code> simply prints its arguments as text, while <code>type</code> analyzes each argument as a potential command.</p>
+<h2 id="the-case-of-other-builtins">The case of other builtins</h2>
+<p>Other Bash builtins have their own specific behaviors:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>which which which which  <span style="color:#228b22"># Different behavior</span>
+</span></span><span style="display:flex;"><span><span style="color:#658b00">command</span> <span style="color:#658b00">command</span> <span style="color:#658b00">command</span> <span style="color:#658b00">command</span>  <span style="color:#228b22"># Different behavior</span>
+</span></span></code></pre></div><p>The <code>type</code> command is special because:</p>
+<ol>
+<li>It&rsquo;s a builtin designed for command introspection</li>
+<li>It processes each argument independently</li>
+<li>It&rsquo;s designed to answer the question &ldquo;what is this command?&rdquo; for each argument</li>
+</ol>
+<h2 id="verification-using-strace">Verification using strace</h2>
+<p>We can verify this behavior using <code>strace</code> to see exactly what&rsquo;s happening at the system level:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>strace -e <span style="color:#00688b">trace</span>=execve bash -c <span style="color:#cd5555">&#39;type type type type&#39;</span>
+</span></span></code></pre></div><p>This would show us that there are no <code>execve</code> calls because <code>type</code> is a builtin, and would confirm that it&rsquo;s being executed three times within the Bash process.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This seemingly strange behavior is actually consistent with the design and purpose of the <code>type</code> command. It&rsquo;s an excellent example of how Bash builtins can have specific behaviors that differ from regular external commands, and how argument processing in Bash can lead to results that initially seem counterintuitive but are completely logical once you understand the underlying mechanism.</p>
 
----
-
-## Conclusion
-
-Recursive commands in Bash like `type`, `eval`, and `builtin` introspect or process arguments repeatedly, making them powerful for debugging and scripting. Non-recursive commands like `ls` and `echo` are simpler and don’t exhibit this behavior. Understanding these differences can improve your command-line proficiency and scripting skills.
-</code></pre>
                 </div>
                 
             
