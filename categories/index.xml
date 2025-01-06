@@ -47,13 +47,23 @@ I cobbled together a hack using Google Cloud’s Text-to-Speech API and Obsidian
         </item>
             
         <item>
+          <title>Recursion in Bash</title>
+          <link>https://abelgvidal.github.io/posts/recursive-bash/</link>
+          <pubDate>Sun, 15 Dec 2024 20:03:54 +0100</pubDate>
+          
+          <guid>https://abelgvidal.github.io/posts/recursive-bash/</guid>
+          <description>Recursion in Bash Recursion in Bash commands can be useful, especially in debugging and understanding how the shell interprets inputs. This guide focuses on recursive commands like type, eval, and builtin and compares them with non-recursive ones like ls and echo. Here’s what you need to know.
+What is Recursion in Bash? Some Bash commands call themselves when processing their inputs. For example, type can take itself as an argument and repeatedly resolve its behavior until it provides a final answer.</description>
+        </item>
+            
+        <item>
           <title>About Me</title>
           <link>https://abelgvidal.github.io/posts/aboutme/</link>
           <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
           
           <guid>https://abelgvidal.github.io/posts/aboutme/</guid>
-          <description>My name is Abel González Vidal. I work as a platform engineer. This is my blog where I talk about a variety of topics. Thanks for stopping by!
-More boring stuff in my Linkedin.</description>
+          <description>Hy! My name is Abel González Vidal. I work as a platform engineer lead at Nextail.
+My CV is available here (PDF) or in Linkedin.</description>
         </item>
             
         
