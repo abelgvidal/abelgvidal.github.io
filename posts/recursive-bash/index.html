@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <title>lpsz </title>
+<head>
+    <title>lpsz - Why &#39;type type type type&#39; runs three times in Bash </title>
     <link rel="stylesheet" type="text/css" href="/css/fonts.css">
     <link rel="stylesheet" type="text/css" href="/css/fontawesome.css">
     
@@ -26,7 +26,7 @@
 <body>
 <header class="page-header">
     <div class="myname"> 
-        <h2><a href="http://localhost:1313/">lpsz</a></h2> 
+        <h2><a href="https://abelgvidal.github.io/">lpsz</a></h2> 
     </div>
     <nav>
         <ul class="navbar">
@@ -52,34 +52,26 @@
     <main>
         <article>
             
-            <h1 class="page-title blog"></h1>
+            <h1 class="page-title blog">Why &#39;type type type type&#39; runs three times in Bash</h1>
             
-                <p class="blog-post-info">Posted: <time>0001-01-01</time>
+                <p class="blog-post-info">Posted: <time>2025-01-03</time>
                 
 
+
+    <span class="blog-taxonomy-info"> &nbsp; | &nbsp; Tags: 
+        
+        
+        
+        <a class="blog-taxonomy-info" href="/tags/bash">bash</a>, <a class="blog-taxonomy-info" href="/tags/linux">linux</a>, <a class="blog-taxonomy-info" href="/tags/programming">programming</a>, <a class="blog-taxonomy-info" href="/tags/shell">shell</a>
+    </span>
 
 </p>
 
                 <div class="blog-post-content">
-                <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>---
-</span></span><span style="display:flex;"><span>title: &#34;Why &#39;type type type type&#39; runs three times in Bash&#34;
-</span></span><span style="display:flex;"><span>date: 2024-12-30
-</span></span><span style="display:flex;"><span>description: &#34;A deep dive into why the Bash &#39;type&#39; command exhibits this peculiar behavior&#34;
-</span></span><span style="display:flex;"><span>tags: [&#34;bash&#34;, &#34;linux&#34;, &#34;shell&#34;, &#34;programming&#34;]
-</span></span><span style="display:flex;"><span>categories: [&#34;Technical&#34;, &#34;Shell Scripting&#34;]
-</span></span><span style="display:flex;"><span>draft = false
-</span></span><span style="display:flex;"><span>---
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#000080;font-weight:bold"># Why `type type type type` executes the command three times
-</span></span></span><span style="display:flex;"><span><span style="color:#000080;font-weight:bold"></span>
-</span></span><span style="display:flex;"><span>In Bash, when we run the command <span style="color:#cd5555">`type type type type`</span>, we observe a peculiar behavior: it executes three times instead of once or four times. This phenomenon is fascinating and is due to how Bash processes arguments and how the <span style="color:#cd5555">`type`</span> command specifically works.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#800080;font-weight:bold">## The behavior of `type`
-</span></span></span><span style="display:flex;"><span><span style="color:#800080;font-weight:bold"></span>
-</span></span><span style="display:flex;"><span>The <span style="color:#cd5555">`type`</span> command is a Bash builtin used to determine how Bash would interpret a command name. When we execute:
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>```bash
-</span></span><span style="display:flex;"><span>type type type type
+                <p>In Bash, when we run the command <code>type type type type</code>, we observe a peculiar behavior: it executes three times instead of once or four times. This phenomenon is fascinating and is due to how Bash processes arguments and how the <code>type</code> command specifically works.</p>
+<h2 id="the-behavior-of-type">The behavior of <code>type</code></h2>
+<p>The <code>type</code> command is a Bash builtin used to determine how Bash would interpret a command name. When we execute:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#658b00">type</span> <span style="color:#658b00">type</span> <span style="color:#658b00">type</span> <span style="color:#658b00">type</span>
 </span></span></code></pre></div><p>We get an output similar to this:</p>
 <pre tabindex="0"><code>type is a shell builtin
 type is a shell builtin
