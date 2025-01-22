@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>lpsz</title>
-        <link>https://abelgvidal.github.io/</link>
+        <link>http://localhost:1313/</link>
         <description>Latest blog posts from lpsz</description>
 
         
@@ -18,21 +18,21 @@
         
 
         
-        <lastBuildDate>Tue, 21 Jan 2025 20:03:54 +0100</lastBuildDate>
+        <lastBuildDate>Mon, 20 Jan 2025 20:03:54 +0100</lastBuildDate>
         
 
         
-        <atom:link href="https://abelgvidal.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
         
 
         
             
         <item>
           <title>AI Eats Its Own Tail</title>
-          <link>https://abelgvidal.github.io/posts/eatitself/</link>
-          <pubDate>Tue, 21 Jan 2025 20:03:54 +0100</pubDate>
+          <link>http://localhost:1313/posts/eatitself/</link>
+          <pubDate>Mon, 20 Jan 2025 20:03:54 +0100</pubDate>
           
-          <guid>https://abelgvidal.github.io/posts/eatitself/</guid>
+          <guid>http://localhost:1313/posts/eatitself/</guid>
           <description>Seeing the evolution of StackOverflow, which seems to be declining due to the rise of ChatGPT and similar tools, I wonder about the long-term viability of projects like this.
 On the other hand, where will AIs get their information if these projects disappear? Their answers could degrade significantly without such resources.
 Could we be stuck in a cycle where AI destroys these collaborative platforms, worsens after losing them, then these platforms revive, only to decline again as AI uses their information to present it in a more convenient way?</description>
@@ -40,10 +40,10 @@ Could we be stuck in a cycle where AI destroys these collaborative platforms, wo
             
         <item>
           <title>Reading notes: Ethics for Engineering</title>
-          <link>https://abelgvidal.github.io/posts/eticaparaingenieros/</link>
+          <link>http://localhost:1313/posts/eticaparaingenieros/</link>
           <pubDate>Mon, 23 Dec 2024 20:03:54 +0100</pubDate>
           
-          <guid>https://abelgvidal.github.io/posts/eticaparaingenieros/</guid>
+          <guid>http://localhost:1313/posts/eticaparaingenieros/</guid>
           <description>These are my reading notes for the book “Ética para ingenieros” by Galo Bilbao Alberdi, Francisco Javier Fuertes Pérez and José Mª Guibert Ucín.
 The Engineering Profession Different sociological perspectives explore the meaning of professions, from traditional occupations like doctors or lawyers to modern professions requiring university education. The fundamental aspect of a profession is its unique service to society, a vocation that has intensified with modernity through “professionalization.”
 There are notable concerns about the excesses of this process, such as the obsession with titles rather than service to society, distinguishing between “bad professionalism” and “good professionalism” oriented toward the community.</description>
@@ -51,29 +51,29 @@ There are notable concerns about the excesses of this process, such as the obses
             
         <item>
           <title>Making Obsidian Talk with Google&#39;s Fancy Wavenet Voices</title>
-          <link>https://abelgvidal.github.io/posts/obsidian-wavenet/</link>
+          <link>http://localhost:1313/posts/obsidian-wavenet/</link>
           <pubDate>Sun, 15 Dec 2024 20:03:54 +0100</pubDate>
           
-          <guid>https://abelgvidal.github.io/posts/obsidian-wavenet/</guid>
+          <guid>http://localhost:1313/posts/obsidian-wavenet/</guid>
           <description>I’m sharing a little hack I put together. As a hardcore Obsidian user, I was getting frustrated with the available text-to-speech options. I really wanted to use Google’s Wavenet voices because they sound amazing, but couldn’t find a plugin that did exactly what I wanted. So I sorted it out myself.
 I cobbled together a hack using Google Cloud’s Text-to-Speech API and Obsidian’s Shell Commands plugin. Here’s how you can do it too (assuming you’re on Linux, if not you need some adjustment):</description>
         </item>
             
         <item>
           <title></title>
-          <link>https://abelgvidal.github.io/posts/recursive-bash/</link>
+          <link>http://localhost:1313/posts/recursive-bash/</link>
           <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
           
-          <guid>https://abelgvidal.github.io/posts/recursive-bash/</guid>
+          <guid>http://localhost:1313/posts/recursive-bash/</guid>
           <description>&mdash; title: &quot;Why 'type type type type' runs three times in Bash&quot; date: 2024-12-30 description: &quot;A deep dive into why the Bash 'type' command exhibits this peculiar behavior&quot; tags: [&quot;bash&quot;, &quot;linux&quot;, &quot;shell&quot;, &quot;programming&quot;] categories: [&quot;Technical&quot;, &quot;Shell Scripting&quot;] draft = false &mdash; # Why <code>type type type type</code> executes the command three times In Bash, when we run the command <code>type type type type</code>, we observe a peculiar behavior: it executes three times instead of once or four times.</description>
         </item>
             
         <item>
           <title>About Me</title>
-          <link>https://abelgvidal.github.io/posts/aboutme/</link>
+          <link>http://localhost:1313/posts/aboutme/</link>
           <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
           
-          <guid>https://abelgvidal.github.io/posts/aboutme/</guid>
+          <guid>http://localhost:1313/posts/aboutme/</guid>
           <description>Hy! My name is Abel González Vidal. I work as a platform engineer lead at Nextail.
 My CV is available here 📄 (PDF) or in Linkedin.</description>
         </item>
