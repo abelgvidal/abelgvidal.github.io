@@ -28,6 +28,17 @@
         
             
         <item>
+          <title>AI Eats Its Own Tail</title>
+          <link>https://abelgvidal.github.io/posts/eatitself/</link>
+          <pubDate>Tue, 21 Jan 2025 20:03:54 +0100</pubDate>
+          
+          <guid>https://abelgvidal.github.io/posts/eatitself/</guid>
+          <description>Seeing the evolution of StackOverflow, which seems to be declining due to the rise of ChatGPT and similar tools, I wonder about the long-term viability of projects like this.
+On the other hand, where will AIs get their information if these projects disappear? Their answers could degrade significantly without such resources.
+Could we be stuck in a cycle where AI destroys these collaborative platforms, worsens after losing them, then these platforms revive, only to decline again as AI uses their information to present it in a more convenient way?</description>
+        </item>
+            
+        <item>
           <title>Reading notes: Ethics for Engineering</title>
           <link>https://abelgvidal.github.io/posts/eticaparaingenieros/</link>
           <pubDate>Mon, 23 Dec 2024 20:03:54 +0100</pubDate>
