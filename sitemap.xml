@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://abelgvidal.github.io/posts/optionalrandom/</loc>
+    <lastmod>2025-01-20T20:03:54+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://abelgvidal.github.io/</loc>
     <lastmod>2025-01-20T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
@@ -18,6 +23,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://abelgvidal.github.io/posts/</loc>
+    <lastmod>2025-01-20T20:03:54+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://abelgvidal.github.io/tags/probability/</loc>
     <lastmod>2025-01-20T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
@@ -94,10 +104,6 @@
   </url><url>
     <loc>https://abelgvidal.github.io/tags/wavenet/</loc>
     <lastmod>2024-12-15T20:03:54+01:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://abelgvidal.github.io/posts/optionalrandom/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>

@@ -28,6 +28,17 @@
         
             
         <item>
+          <title> Be wrong in Probability Like a Pro</title>
+          <link>https://abelgvidal.github.io/posts/optionalrandom/</link>
+          <pubDate>Mon, 20 Jan 2025 20:03:54 +0100</pubDate>
+          
+          <guid>https://abelgvidal.github.io/posts/optionalrandom/</guid>
+          <description>Be wrong in Probability Like a Pro “We made too many wrong mistakes”. Yogi Berra.
+In her book “Randomness,” Deborah Bennett presents a fascinating example that illustrates how bad we are at calculating probabilities, even highly trained professionals. A group of doctors received this question:
+The test of a disease has a 5% false positive rate. The disease affects 1 in 1000 people in the population. People are tested randomly, whether they are suspected to be sick or not.</description>
+        </item>
+            
+        <item>
           <title>AI Eats Its Own Tail</title>
           <link>https://abelgvidal.github.io/posts/eatitself/</link>
           <pubDate>Mon, 20 Jan 2025 20:03:54 +0100</pubDate>
@@ -68,17 +79,6 @@ There are notable concerns about the excesses of this process, such as the obses
           <guid>https://abelgvidal.github.io/posts/obsidian-wavenet/</guid>
           <description>I’m sharing a little hack I put together. As a hardcore Obsidian user, I was getting frustrated with the available text-to-speech options. I really wanted to use Google’s Wavenet voices because they sound amazing, but couldn’t find a plugin that did exactly what I wanted. So I sorted it out myself.
 I cobbled together a hack using Google Cloud’s Text-to-Speech API and Obsidian’s Shell Commands plugin. Here’s how you can do it too (assuming you’re on Linux, if not you need some adjustment):</description>
-        </item>
-            
-        <item>
-          <title></title>
-          <link>https://abelgvidal.github.io/posts/optionalrandom/</link>
-          <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-          
-          <guid>https://abelgvidal.github.io/posts/optionalrandom/</guid>
-          <description>How to Misinterpret Probabilities Like a Pro “We made too many wrong mistakes”. Yogi Berra.
-In her book “Randomness,” Deborah Bennett presents a fascinating example that illustrates how bad we are at calculating probabilities, even highly trained professionals. A group of doctors received this question:
-The test of a disease has a 5% false positive rate. The disease affects 1 in 1000 people in the population. People are tested randomly, whether they are suspected to be sick or not.</description>
         </item>
             
         <item>
