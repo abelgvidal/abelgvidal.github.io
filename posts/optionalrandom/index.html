@@ -76,18 +76,17 @@
 </p>
 
                 <div class="blog-post-content">
-                <p>In her book &ldquo;Randomness,&rdquo; Deborah Bennett presents a fascinating example that illustrates how bad we are at calculating probabilities, even highly trained professionals. A group of doctors received this question:</p>
+                <p>In her book &ldquo;Randomness,&rdquo; Deborah Bennett presents an example that illustrates how bad we are at calculating probabilities, even highly trained professionals. A group of doctors received this question:</p>
 <blockquote>
-<p>The test of a disease has a 5% false positive rate. The disease affects 1 in 1000 people in the population. People are tested randomly, whether they are suspected to be sick or not. A particular patient&rsquo;s test is positive. What is the probability that they actually have the disease?</p>
+<p>The test of a disease has a 5% false positive rate. The disease affects 1 in 1000 people in the population. People are tested randomly, whether they are suspected to be sick or not. A particular patient&rsquo;s test is positive. What is the probability that this patient actually have the disease?</p>
 </blockquote>
-<p>Most doctors said 95%, which is wrong. The correct answer, which we&rsquo;ll calculate below, is closer to 2%. This shows how counterintuitive probability can be, especially when dealing with rare events and conditional probabilities.</p>
+<p>Most doctors said 95%. The correct answer is closer to 2%.</p>
 <h2 id="an-intuitive-approach">An Intuitive Approach</h2>
 <p>Let&rsquo;s break this down step by step. Imagine you have a machine (the test) to find sick people in a village of 1000 inhabitants:</p>
 <ol>
 <li>In this village, only 1 person is actually sick (1 in 1000)</li>
 <li>The machine makes mistakes: for every 100 healthy people it tests, it gets it wrong with 5 and says they&rsquo;re sick when they&rsquo;re not (5% false positive rate)</li>
 </ol>
-<p>Let&rsquo;s do the math:</p>
 <p>Out of the 1000 people in the village:</p>
 <ul>
 <li>1 person is actually sick</li>
@@ -97,29 +96,27 @@
 <ul>
 <li>The machine gets it wrong with 5% of them</li>
 <li>5% of 999 ≈ 50 people</li>
-<li>This means the machine will say 50 healthy people are sick (when they&rsquo;re not!)</li>
+<li>This means the machine will say 50 healthy people are sick</li>
 </ul>
 <p>So, when the machine says &ldquo;this person is sick&rdquo;:</p>
 <ul>
 <li>It could be the 1 person who is actually sick</li>
 <li>Or it could be one of the 50 healthy people the machine got wrong about</li>
 </ul>
-<p>In total, the machine will say 51 people are sick (1 actually sick + 50 false positives).
-Therefore, if the machine tells you you&rsquo;re sick, the probability that you actually are is:</p>
-<pre tabindex="0"><code>1 actually sick person / 51 people the machine says are sick ≈ 2%
-</code></pre><h2 id="why-did-the-doctors-get-it-wrong">Why Did the Doctors Get It Wrong?</h2>
+<p>So of 52 positives, only 1 is accurate. Probability ≈ 2%</p>
+<h2 id="why-did-the-doctors-get-it-wrong">Why Did the Doctors Get It Wrong?</h2>
 <p>The doctors&rsquo; intuitive answer of 95% was wrong because they focused only on the test&rsquo;s accuracy for a single case. They failed to consider:</p>
 <ol>
 <li>The base rate (how rare the disease is)</li>
 <li>How the false positive rate affects a large population of healthy people</li>
 <li>How these factors combine using Bayes&rsquo; Theorem</li>
 </ol>
-<p>This is known as the base rate fallacy or base rate neglect, and it&rsquo;s a common cognitive bias that affects even highly trained professionals.</p>
+<p>This is known as the base rate fallacy or base rate neglect, and it&rsquo;s a common cognitive bias that affects all of us.</p>
 <h2 id="more">More</h2>
 <ul>
 <li>Tversky, A., &amp; Kahneman, D. (1974). &ldquo;Judgment under Uncertainty: Heuristics and Biases.&rdquo; Science, 185(4157),The landmark paper introducing cognitive biases in probability estimation. First formal description of base rate neglect</li>
-<li>Bar-Hillel, M. (1980). &ldquo;The base-rate fallacy in probability judgments.&rdquo; Acta Psychologica, 44(3), 211-233. Comprehensive mathematical analysis of base rate neglect. Introduced formal models of bias in Bayesian reasoning</li>
 </ul>
+<p>Note:W e are ignoring the false negatives ratio here for clarity.</p>
 
                 </div>
                 
