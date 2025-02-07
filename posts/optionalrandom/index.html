@@ -76,10 +76,7 @@
 </p>
 
                 <div class="blog-post-content">
-                <blockquote>
-<p>&ldquo;We made too many wrong mistakes&rdquo;. Yogi Berra.</p>
-</blockquote>
-<p>In her book &ldquo;Randomness,&rdquo; Deborah Bennett presents a fascinating example that illustrates how bad we are at calculating probabilities, even highly trained professionals. A group of doctors received this question:</p>
+                <p>In her book &ldquo;Randomness,&rdquo; Deborah Bennett presents a fascinating example that illustrates how bad we are at calculating probabilities, even highly trained professionals. A group of doctors received this question:</p>
 <blockquote>
 <p>The test of a disease has a 5% false positive rate. The disease affects 1 in 1000 people in the population. People are tested randomly, whether they are suspected to be sick or not. A particular patient&rsquo;s test is positive. What is the probability that they actually have the disease?</p>
 </blockquote>
@@ -110,19 +107,7 @@
 <p>In total, the machine will say 51 people are sick (1 actually sick + 50 false positives).
 Therefore, if the machine tells you you&rsquo;re sick, the probability that you actually are is:</p>
 <pre tabindex="0"><code>1 actually sick person / 51 people the machine says are sick ≈ 2%
-</code></pre><h2 id="adding-false-negatives">Adding False Negatives</h2>
-<p>But what about false negatives (when it says you&rsquo;re not sick but you are)? Let&rsquo;s say the test has 10% false negatives, meaning if someone is sick, the test will miss it 10% of the time.</p>
-<p>Using our intuitive approach first:</p>
-<ul>
-<li>From sick people: We&rsquo;ll detect 90% of them (so 0.9 people instead of 1)</li>
-<li>From healthy people: Still get 50 false positives (5% of 999)</li>
-</ul>
-<pre tabindex="0"><code>0.9 actually sick people / (0.9 + 50) people who test positive ≈ 1.8%
-</code></pre><p>We can verify this using Bayes&rsquo; Theorem by updating P(+|D) from 1 to 0.9:</p>
-<p>$$P(D|+) = \frac{0.9 \times \frac{1}{1000}}{0.9 \times \frac{1}{1000} + 0.05 \times \frac{999}{1000}} \approx 0.018 = 1.8%$$</p>
-<p>The probability is slightly lower now (1.8% vs 2%) simply because we&rsquo;re detecting fewer true positives (0.9 instead of 1), while still getting the same number of false positives (50).</p>
-<p>Important: False negatives do NOT make positive results less reliable. They only mean we&rsquo;ll miss some sick people (they&rsquo;ll get negative results when they should get positive ones).</p>
-<h2 id="why-did-the-doctors-get-it-wrong">Why Did the Doctors Get It Wrong?</h2>
+</code></pre><h2 id="why-did-the-doctors-get-it-wrong">Why Did the Doctors Get It Wrong?</h2>
 <p>The doctors&rsquo; intuitive answer of 95% was wrong because they focused only on the test&rsquo;s accuracy for a single case. They failed to consider:</p>
 <ol>
 <li>The base rate (how rare the disease is)</li>
