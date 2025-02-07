@@ -26,17 +26,6 @@
         
             
         <item>
-          <title> Be wrong in Probability Like a Pro</title>
-          <link>https://abelgvidal.github.io/posts/optionalrandom/</link>
-          <pubDate>Mon, 20 Jan 2025 20:03:54 +0100</pubDate>
-          
-          <guid>https://abelgvidal.github.io/posts/optionalrandom/</guid>
-          <description>Be wrong in Probability Like a Pro “We made too many wrong mistakes”. Yogi Berra.
-In her book “Randomness,” Deborah Bennett presents a fascinating example that illustrates how bad we are at calculating probabilities, even highly trained professionals. A group of doctors received this question:
-The test of a disease has a 5% false positive rate. The disease affects 1 in 1000 people in the population. People are tested randomly, whether they are suspected to be sick or not.</description>
-        </item>
-            
-        <item>
           <title>AI Eats Its Own Tail</title>
           <link>https://abelgvidal.github.io/posts/eatitself/</link>
           <pubDate>Mon, 20 Jan 2025 20:03:54 +0100</pubDate>
@@ -45,6 +34,17 @@ The test of a disease has a 5% false positive rate. The disease affects 1 in 100
           <description>Seeing the evolution of StackOverflow, which seems to be declining due to the rise of ChatGPT and similar tools, I wonder about the long-term viability of projects like this.
 On the other hand, where will AIs get their information if these projects disappear? Their answers could degrade significantly without such resources.
 Could we be stuck in a cycle where AI destroys these collaborative platforms, worsens after losing them, then these platforms revive because this is information that is needed (and now is missing), only to decline again as AI uses their information to present it in a more convenient way?</description>
+        </item>
+            
+        <item>
+          <title>Be wrong in Probability Like a Pro</title>
+          <link>https://abelgvidal.github.io/posts/optionalrandom/</link>
+          <pubDate>Mon, 20 Jan 2025 20:03:54 +0100</pubDate>
+          
+          <guid>https://abelgvidal.github.io/posts/optionalrandom/</guid>
+          <description>Be wrong in Probability Like a Pro “We made too many wrong mistakes”. Yogi Berra.
+In her book “Randomness,” Deborah Bennett presents a fascinating example that illustrates how bad we are at calculating probabilities, even highly trained professionals. A group of doctors received this question:
+The test of a disease has a 5% false positive rate. The disease affects 1 in 1000 people in the population. People are tested randomly, whether they are suspected to be sick or not.</description>
         </item>
             
         <item>
