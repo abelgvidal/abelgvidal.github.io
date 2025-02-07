@@ -69,6 +69,17 @@ I cobbled together a hack using Google Cloud’s Text-to-Speech API and Obsidian
         </item>
             
         <item>
+          <title></title>
+          <link>https://abelgvidal.github.io/posts/optionalrandom/</link>
+          <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+          
+          <guid>https://abelgvidal.github.io/posts/optionalrandom/</guid>
+          <description>How to Misinterpret Probabilities Like a Pro “We made too many wrong mistakes”. Yogi Berra.
+In her book “Randomness,” Deborah Bennett presents a fascinating example that illustrates how bad we are at calculating probabilities, even highly trained professionals. A group of doctors received this question:
+The test of a disease has a 5% false positive rate. The disease affects 1 in 1000 people in the population. People are tested randomly, whether they are suspected to be sick or not.</description>
+        </item>
+            
+        <item>
           <title>About Me</title>
           <link>https://abelgvidal.github.io/posts/aboutme/</link>
           <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

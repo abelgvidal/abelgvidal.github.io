@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Abel&#39;s notes </title>
+    <link rel="stylesheet" type="text/css" href="/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="/css/fontawesome.css">
+    
+    
+    <link rel="stylesheet" type="text/css" href="/css/styles.min.d1b3428734153d8c3b5e2f3598da20a6372f630ae87c763594b98c554c580343.css">
+    
+    
+    <meta charset="UTF-8">
+    <meta name="author" content="Abel González Vidal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-37PFXMQRGD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-37PFXMQRGD');
+</script>
+
+</head>
+<body>
+<header class="page-header">
+    <div class="myname"> 
+        <h2><a href="https://abelgvidal.github.io/">Abel&#39;s notes</a></h2> 
+    </div>
+    <nav>
+        <ul class="navbar">
+            <li class="">
+                <a href="/posts">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="/tags/books/">
+                    <span>Books</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="/posts/aboutme/">
+                    <span>About me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div id="content">
+    <main>
+        <article>
+            
+            <h1 class="page-title blog"></h1>
+            
+                <p class="blog-post-info">Posted: <time>0001-01-01</time>
+                
+
+
+</p>
+
+                <div class="blog-post-content">
+                <h1 id="how-to-misinterpret-probabilities-like-a-pro">How to Misinterpret Probabilities Like a Pro</h1>
+<blockquote>
+<p>&ldquo;We made too many wrong mistakes&rdquo;. Yogi Berra.</p>
+</blockquote>
+<p>In her book &ldquo;Randomness,&rdquo; Deborah Bennett presents a fascinating example that illustrates how bad we are at calculating probabilities, even highly trained professionals. A group of doctors received this question:</p>
+<blockquote>
+<p>The test of a disease has a 5% false positive rate. The disease affects 1 in 1000 people in the population. People are tested randomly, whether they are suspected to be sick or not. A particular patient&rsquo;s test is positive. What is the probability that they actually have the disease?</p>
+</blockquote>
+<p>Most doctors said 95%, which is dramatically wrong. The correct answer, which we&rsquo;ll calculate below, is closer to 2%. This shows how counterintuitive probability can be, especially when dealing with rare events and conditional probabilities.</p>
+<h2 id="an-intuitive-approach">An Intuitive Approach</h2>
+<p>Let&rsquo;s break this down step by step. Imagine you have a machine (the test) that must find sick people in a village of 1000 inhabitants:</p>
+<ol>
+<li>In this village, only 1 person is actually sick (1 in 1000)</li>
+<li>The machine makes mistakes: for every 100 healthy people it tests, it gets it wrong with 5 and says they&rsquo;re sick when they&rsquo;re not (5% false positive rate)</li>
+</ol>
+<p>Let&rsquo;s do the math:</p>
+<p>Out of the 1000 people in the village:</p>
+<ul>
+<li>1 person is actually sick</li>
+<li>999 people are healthy</li>
+</ul>
+<p>Of the 999 healthy people:</p>
+<ul>
+<li>The machine gets it wrong with 5% of them</li>
+<li>5% of 999 ≈ 50 people</li>
+<li>This means the machine will say 50 healthy people are sick (when they&rsquo;re not!)</li>
+</ul>
+<p>So, when the machine says &ldquo;this person is sick&rdquo;:</p>
+<ul>
+<li>It could be the 1 person who is actually sick</li>
+<li>Or it could be one of the 50 healthy people the machine got wrong about</li>
+</ul>
+<p>In total, the machine will say 51 people are sick (1 actually sick + 50 false positives).
+Therefore, if the machine tells you you&rsquo;re sick, the probability that you actually are is:</p>
+<pre tabindex="0"><code>1 actually sick person / 51 people the machine says are sick ≈ 2%
+</code></pre><h2 id="adding-false-negatives">Adding False Negatives</h2>
+<p>But what about false negatives (when it says you&rsquo;re not sick but you are)? Let&rsquo;s say the test has 10% false negatives, meaning if someone is sick, the test will miss it 10% of the time.</p>
+<p>Using our intuitive approach first:</p>
+<ul>
+<li>From sick people: We&rsquo;ll detect 90% of them (so 0.9 people instead of 1)</li>
+<li>From healthy people: Still get 50 false positives (5% of 999)</li>
+</ul>
+<pre tabindex="0"><code>0.9 actually sick people / (0.9 + 50) people who test positive ≈ 1.8%
+</code></pre><p>We can verify this using Bayes&rsquo; Theorem by updating P(+|D) from 1 to 0.9:</p>
+<p>$$P(D|+) = \frac{0.9 \times \frac{1}{1000}}{0.9 \times \frac{1}{1000} + 0.05 \times \frac{999}{1000}} \approx 0.018 = 1.8%$$</p>
+<p>The probability is slightly lower now (1.8% vs 2%) simply because we&rsquo;re detecting fewer true positives (0.9 instead of 1), while still getting the same number of false positives (50).</p>
+<p>Important: False negatives do NOT make positive results less reliable. They only mean we&rsquo;ll miss some sick people (they&rsquo;ll get negative results when they should get positive ones).</p>
+<h2 id="why-did-the-doctors-get-it-wrong">Why Did the Doctors Get It Wrong?</h2>
+<p>The doctors&rsquo; intuitive answer of 95% was wrong because they focused only on the test&rsquo;s accuracy for a single case. They failed to consider:</p>
+<ol>
+<li>The base rate (how rare the disease is)</li>
+<li>How the false positive rate affects a large population of healthy people</li>
+<li>How these factors combine using Bayes&rsquo; Theorem</li>
+</ol>
+<p>This is known as the base rate fallacy or base rate neglect, and it&rsquo;s a common cognitive bias that affects even highly trained professionals.</p>
+<h2 id="more">More</h2>
+<ul>
+<li>Tversky, A., &amp; Kahneman, D. (1974). &ldquo;Judgment under Uncertainty: Heuristics and Biases.&rdquo; Science, 185(4157),The landmark paper introducing cognitive biases in probability estimation. First formal description of base rate neglect</li>
+<li>Bar-Hillel, M. (1980). &ldquo;The base-rate fallacy in probability judgments.&rdquo; Acta Psychologica, 44(3), 211-233. Comprehensive mathematical analysis of base rate neglect. Introduced formal models of bias in Bayesian reasoning</li>
+</ul>
+
+                </div>
+                
+            
+        </article>
+    </main>
+
+        </div><footer>
+    <span></span>
+</footer>
+</body>
+</html>
