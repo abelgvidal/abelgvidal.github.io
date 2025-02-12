@@ -17,7 +17,17 @@
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://abelgvidal.github.io/tags/books/</loc>
+    <lastmod>2025-01-20T20:03:54+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://abelgvidal.github.io/tags/cognitive-bias/</loc>
+    <lastmod>2025-01-20T20:03:54+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://abelgvidal.github.io/posts/fooled-by-randomness/</loc>
     <lastmod>2025-01-20T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
@@ -64,11 +74,6 @@
   </url><url>
     <loc>https://abelgvidal.github.io/posts/recursive-bash/</loc>
     <lastmod>2025-01-03T20:03:54+01:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://abelgvidal.github.io/tags/books/</loc>
-    <lastmod>2024-12-23T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
