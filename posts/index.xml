@@ -18,7 +18,7 @@
         
 
         
-        <lastBuildDate>Mon, 20 Jan 2025 20:03:54 +0100</lastBuildDate>
+        <lastBuildDate>Wed, 12 Feb 2025 20:02:54 +0100</lastBuildDate>
         
 
         
@@ -26,6 +26,16 @@
         
 
         
+            
+        <item>
+          <title>Fooled by randomness</title>
+          <link>https://abelgvidal.github.io/posts/fooled-by-randomness/</link>
+          <pubDate>Wed, 12 Feb 2025 20:02:54 +0100</pubDate>
+          
+          <guid>https://abelgvidal.github.io/posts/fooled-by-randomness/</guid>
+          <description>Fooled by randomness These are my notes for the book “Fooled by Randomness” by Nassim Taleb.
+The thesis of the book is that when we look at the past we find things that are not there, the past is much more random than our vision. This is called the Hindsight bias. So we have to be aware that when people relate the past usually they tend to create post-hoc rationalizations and retrofitted explanations.</description>
+        </item>
             
         <item>
           <title>AI Eats Its Own Tail</title>
@@ -46,16 +56,6 @@ Could we be stuck in a cycle where AI destroys these collaborative platforms, wo
           <guid>https://abelgvidal.github.io/posts/optionalrandom/</guid>
           <description>In her book “Randomness,” Deborah Bennett presents an example that illustrates how bad we are at calculating probabilities, even highly trained professionals. A group of doctors received this question:
 The test of a disease has a 5% false positive rate. The disease affects 1 in 1000 people in the population. People are tested randomly, whether they are suspected to be sick or not. A particular patient’s test is positive. What is the probability that this patient actually has the disease?</description>
-        </item>
-            
-        <item>
-          <title>Fooled by randomness</title>
-          <link>https://abelgvidal.github.io/posts/fooled-by-randomness/</link>
-          <pubDate>Mon, 20 Jan 2025 20:03:54 +0100</pubDate>
-          
-          <guid>https://abelgvidal.github.io/posts/fooled-by-randomness/</guid>
-          <description>Fooled by randomness These are my notes for the book “Fooled by Randomness” by Nassim Taleb.
-The thesis of the book is that when we look at the past we find things that are not there, the past is much more random than our vision. This is called the Hindsight bias. So we have to be aware that when people relate the past usually they tend to create post-hoc rationalizations and retrofitted explanations.</description>
         </item>
             
         <item>

@@ -3,7 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://abelgvidal.github.io/</loc>
-    <lastmod>2025-01-20T20:03:54+01:00</lastmod>
+    <lastmod>2025-02-12T20:02:54+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://abelgvidal.github.io/tags/books/</loc>
+    <lastmod>2025-02-12T20:02:54+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://abelgvidal.github.io/posts/fooled-by-randomness/</loc>
+    <lastmod>2025-02-12T20:02:54+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://abelgvidal.github.io/posts/</loc>
+    <lastmod>2025-02-12T20:02:54+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://abelgvidal.github.io/tags/probability/</loc>
+    <lastmod>2025-02-12T20:02:54+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://abelgvidal.github.io/tags/</loc>
+    <lastmod>2025-02-12T20:02:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -17,37 +42,12 @@
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/books/</loc>
-    <lastmod>2025-01-20T20:03:54+01:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://abelgvidal.github.io/tags/cognitive-bias/</loc>
     <lastmod>2025-01-20T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/posts/fooled-by-randomness/</loc>
-    <lastmod>2025-01-20T20:03:54+01:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://abelgvidal.github.io/tags/ia/</loc>
-    <lastmod>2025-01-20T20:03:54+01:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://abelgvidal.github.io/posts/</loc>
-    <lastmod>2025-01-20T20:03:54+01:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://abelgvidal.github.io/tags/probability/</loc>
-    <lastmod>2025-01-20T20:03:54+01:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://abelgvidal.github.io/tags/</loc>
     <lastmod>2025-01-20T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
