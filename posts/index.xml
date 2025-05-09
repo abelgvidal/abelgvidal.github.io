@@ -18,7 +18,7 @@
         
 
         
-        <lastBuildDate>Sat, 01 Mar 2025 00:03:54 +0100</lastBuildDate>
+        <lastBuildDate>Thu, 04 Sep 2025 20:02:54 +0100</lastBuildDate>
         
 
         
@@ -98,17 +98,6 @@ There are notable concerns about the excesses of this process, such as the obses
           <guid>https://abelgvidal.github.io/posts/obsidian-wavenet/</guid>
           <description>I’m sharing a little hack I put together. As a hardcore Obsidian user, I was getting frustrated with the available text-to-speech options. I really wanted to use Google’s Wavenet voices because they sound amazing, but couldn’t find a plugin that did exactly what I wanted. So I sorted it out myself.
 I cobbled together a hack using Google Cloud’s Text-to-Speech API and Obsidian’s Shell Commands plugin. Here’s how you can do it too (assuming you’re on Linux, if not you need some adjustment):</description>
-        </item>
-            
-        <item>
-          <title></title>
-          <link>https://abelgvidal.github.io/posts/franny/</link>
-          <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-          
-          <guid>https://abelgvidal.github.io/posts/franny/</guid>
-          <description>“Franny y Zooey” de J.D. Salinger Aviso: Esta reseña contiene spoilers
-Este libro es especial porque contrapone las enseñanzas zen con la América consumista de 1950.
-Conocemos a Franny Glass, una joven que pertenece a una familia de intelectuales superdotados. Se siente agobiada por lo superficial de la vida y busca respuestas en lo espiritual. La historia se divide en dos partes que muestran momentos importantes en la vida de Franny y su hermano Zooey.</description>
         </item>
             
         <item>
