@@ -37,12 +37,12 @@
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/posts/filter-tags-in-hugo-template/</loc>
+    <loc>https://abelgvidal.github.io/tags/hugo/</loc>
     <lastmod>2025-04-13T20:02:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/hugo/</loc>
+    <loc>https://abelgvidal.github.io/posts/filter-tags-in-hugo-template/</loc>
     <lastmod>2025-04-13T20:02:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>

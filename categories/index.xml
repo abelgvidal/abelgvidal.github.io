@@ -35,12 +35,12 @@
         </item>
             
         <item>
-          <title>Filter post by tag in Hugo frontpage</title>
+          <title>Hugo: filter post by tag</title>
           <link>https://abelgvidal.github.io/posts/filter-tags-in-hugo-template/</link>
           <pubDate>Sun, 13 Apr 2025 20:02:54 +0100</pubDate>
           
           <guid>https://abelgvidal.github.io/posts/filter-tags-in-hugo-template/</guid>
-          <description>I wanted to stop showing in the frontpage of this blog powered by Hugo CMS the posts tagged as “TIL” or “IWL”.
+          <description>I wanted to stop showing in the frontpage of this blog powered by (Hugo) the posts tagged as “TIL” or “IWL”.
 My theme template is
 {{ $blogPages := where .Site.RegularPages.ByDate.Reverse &quot;.Type&quot; &quot;in&quot; .Site.Params.mainSections }} I tried with “intersect” and “where” but it did not work, not sure if it is because my Hugo version is old but, anyway, I was too lazy to upgrade Hugo (and adapt all templates, breaking changes, etc) so this simple code made my day:</description>
         </item>

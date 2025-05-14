@@ -184,7 +184,7 @@
     </p>
 </article>
 <article class="blog-post-summary">
-    <h3 class="blog-post-title"><a href="https://abelgvidal.github.io/posts/filter-tags-in-hugo-template/">Filter post by tag in Hugo frontpage</a></h3>
+    <h3 class="blog-post-title"><a href="https://abelgvidal.github.io/posts/filter-tags-in-hugo-template/">Hugo: filter post by tag</a></h3>
 
     <p class="blog-post-info">Posted: <time>2025-04-13</time>
     
@@ -198,7 +198,7 @@
     </span>
 
 </p>
-    <p>I wanted to stop showing in the frontpage of this blog powered by Hugo CMS the posts tagged as &ldquo;TIL&rdquo; or &ldquo;IWL&rdquo;.
+    <p>I wanted to stop showing in the frontpage of this blog powered by (Hugo) the posts tagged as &ldquo;TIL&rdquo; or &ldquo;IWL&rdquo;.
 My theme template is
 {{ $blogPages := where .Site.RegularPages.ByDate.Reverse &#34;.Type&#34; &#34;in&#34; .Site.Params.mainSections }} I tried with &ldquo;intersect&rdquo; and &ldquo;where&rdquo; but it did not work, not sure if it is because my Hugo version is old but, anyway, I was too lazy to upgrade Hugo (and adapt all templates, breaking changes, etc) so this simple code made my day:<span> <a href="https://abelgvidal.github.io/posts/filter-tags-in-hugo-template/">Read more...</a></span>
     </p>

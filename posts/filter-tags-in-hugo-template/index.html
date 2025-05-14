@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Abel&#39;s notes - Filter post by tag in Hugo frontpage </title>
+    <title>Abel&#39;s notes - Hugo: filter post by tag </title>
     <link rel="stylesheet" type="text/css" href="/css/fonts.css">
     <link rel="stylesheet" type="text/css" href="/css/fontawesome.css">
     
@@ -70,7 +70,7 @@
     <main>
         <article>
             
-            <h1 class="page-title blog">Filter post by tag in Hugo frontpage</h1>
+            <h1 class="page-title blog">Hugo: filter post by tag</h1>
             
                 <p class="blog-post-info">Posted: <time>2025-04-13</time>
                 
@@ -86,7 +86,7 @@
 </p>
 
                 <div class="blog-post-content">
-                <p>I wanted to stop showing in the frontpage of this blog powered by Hugo CMS the posts tagged as &ldquo;TIL&rdquo; or &ldquo;IWL&rdquo;.</p>
+                <p>I wanted to stop showing in the frontpage of this blog powered by (<a href="https://gohugo.io/">Hugo</a>) the posts tagged as &ldquo;TIL&rdquo; or &ldquo;IWL&rdquo;.</p>
 <p>My theme template is</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span>$blogPages<span style="color:#bbb"> </span>:=<span style="color:#bbb"> </span>where<span style="color:#bbb"> </span><span style="color:#658b00">.Site.RegularPages.ByDate.Reverse</span><span style="color:#bbb"> </span><span style="color:#cd5555">&#34;.Type&#34;</span><span style="color:#bbb"> </span><span style="color:#cd5555">&#34;in&#34;</span><span style="color:#bbb"> </span><span style="color:#658b00">.Site.Params.mainSections</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
 </span></span></code></pre></div><p>I tried with &ldquo;intersect&rdquo; and &ldquo;where&rdquo; but it did not work, not sure if it is because my Hugo version is old but, anyway, I was too lazy to upgrade Hugo (and adapt all templates, breaking changes, etc) so this simple code made my day:</p>
