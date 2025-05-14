@@ -81,12 +81,9 @@
     
     
         
-        
     
         
-        
     
-        
         
     
     
@@ -97,22 +94,7 @@
     
     
         
-        
     
-        
-        
-    
-    
-    
-
-    
-    
-    
-    
-        
-        
-    
-        
         
     
     
@@ -125,24 +107,7 @@
     
     
         
-        
     
-        
-        
-    
-    
-    
-        
-    
-
-    
-    
-    
-    
-        
-        
-    
-        
         
     
     
@@ -155,21 +120,7 @@
     
     
         
-        
     
-        
-        
-    
-    
-    
-        
-    
-
-    
-    
-    
-    
-        
         
     
     
@@ -182,15 +133,7 @@
     
     
         
-        
     
-        
-        
-    
-        
-        
-    
-        
         
     
     
@@ -203,9 +146,7 @@
     
     
         
-        
     
-        
         
     
     
@@ -218,18 +159,54 @@
     
     
         
+    
+    
+    
+        
+    
+
+    
+    
+    
+    
         
     
         
+    
         
     
         
+    
+    
+    
+        
+    
+
+    
+    
+    
+    
         
     
         
+    
+    
+    
+        
+    
+
+    
+    
+    
+    
         
     
         
+    
+        
+    
+        
+    
         
     
     
@@ -263,6 +240,26 @@
         
             
                 <article class="blog-post-summary">
+    <h3 class="blog-post-title"><a href="https://abelgvidal.github.io/posts/filter-tags-in-hugo-template/">Filter post with some tags in Hugo frontpage</a></h3>
+
+    <p class="blog-post-info">Posted: <time>2025-04-13</time>
+    
+
+
+    <span class="blog-taxonomy-info"> &nbsp; | &nbsp; Tags: 
+        
+        
+        
+        <a class="blog-taxonomy-info" href="/tags/hugo">hugo</a>, <a class="blog-taxonomy-info" href="/tags/til">TIL</a>
+    </span>
+
+</p>
+    <p>I wanted to stop showing in the frontpage of this blog powered by Hugo CMS the posts tagged as &ldquo;TIL&rdquo; or &ldquo;IWL&rdquo;.
+My theme template is
+{{ $blogPages := where .Site.RegularPages.ByDate.Reverse &#34;.Type&#34; &#34;in&#34; .Site.Params.mainSections }} I tried with &ldquo;intersect&rdquo; and where selections but it did not work, not sure if it is because my Hugo version is old but, anyway, I was too lazy to upgrade Hugo (and adapt all templates, breaking changes, etc) so I did it in this simple way and it worked:<span> <a href="https://abelgvidal.github.io/posts/filter-tags-in-hugo-template/">Read more...</a></span>
+    </p>
+</article>
+<article class="blog-post-summary">
     <h3 class="blog-post-title"><a href="https://abelgvidal.github.io/posts/franny/">Franny and Zooey</a></h3>
 
     <p class="blog-post-info">Posted: <time>2025-04-09</time>
@@ -319,25 +316,6 @@ The Game That Made My Day 1. e4 e5 2. Nf3 Nf6 3. Nxe5 Nxe4 4. d3 Nxf2?<span> <a 
 </p>
     <p>Fooled by randomness These are my notes for the book &ldquo;Fooled by Randomness&rdquo; by Nassim Taleb.
 The thesis of the book is that when we look at the past we find things that are not there, the past is much more random than our vision. This is called the Hindsight bias. So we have to be aware that when people relate the past usually they tend to create post-hoc rationalizations and retrofitted explanations.<span> <a href="https://abelgvidal.github.io/posts/fooled-by-randomness/">Read more...</a></span>
-    </p>
-</article>
-<article class="blog-post-summary">
-    <h3 class="blog-post-title"><a href="https://abelgvidal.github.io/posts/optionalrandom/">Be wrong in Probability Like a Pro</a></h3>
-
-    <p class="blog-post-info">Posted: <time>2025-01-20</time>
-    
-
-
-    <span class="blog-taxonomy-info"> &nbsp; | &nbsp; Tags: 
-        
-        
-        
-        <a class="blog-taxonomy-info" href="/tags/cognitive-bias">cognitive bias</a>, <a class="blog-taxonomy-info" href="/tags/probability">probability</a>
-    </span>
-
-</p>
-    <p>In her book &ldquo;Randomness,&rdquo; Deborah Bennett presents an example that illustrates how bad we are at calculating probabilities, even highly trained professionals. A group of doctors received this question:
-The test of a disease has a 5% false positive rate. The disease affects 1 in 1000 people in the population. People are tested randomly, whether they are suspected to be sick or not. A particular patient&rsquo;s test is positive. What is the probability that this patient actually has the disease?<span> <a href="https://abelgvidal.github.io/posts/optionalrandom/">Read more...</a></span>
     </p>
 </article>
 
