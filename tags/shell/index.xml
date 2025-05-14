@@ -37,6 +37,15 @@
         </item>
             
         <item>
+          <title>Filter post with some tags in Hugo frontpage</title>
+          <link>https://abelgvidal.github.io/posts/filter-tags-in-hugo-template/</link>
+          <pubDate>Sun, 13 Apr 2025 20:02:54 +0100</pubDate>
+          
+          <guid>https://abelgvidal.github.io/posts/filter-tags-in-hugo-template/</guid>
+          <description>func main() { fmt.Println(&quot;Hola mundo&quot;) }</description>
+        </item>
+            
+        <item>
           <title>Franny and Zooey</title>
           <link>https://abelgvidal.github.io/posts/franny/</link>
           <pubDate>Wed, 09 Apr 2025 20:02:54 +0100</pubDate>
