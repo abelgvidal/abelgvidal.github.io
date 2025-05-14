@@ -67,6 +67,16 @@
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://abelgvidal.github.io/posts/2025-14-05-k/</loc>
+    <lastmod>2025-04-08T20:02:54+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://abelgvidal.github.io/tags/kubernetes/</loc>
+    <lastmod>2025-04-08T20:02:54+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://abelgvidal.github.io/tags/chess/</loc>
     <lastmod>2025-03-01T00:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
