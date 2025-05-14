@@ -38,10 +38,10 @@
             
         <item>
           <title>Backoff limit per index</title>
-          <link>https://abelgvidal.github.io/posts/2025-14-05-k/</link>
+          <link>https://abelgvidal.github.io/posts/2025-14-05-backoff-index/</link>
           <pubDate>Tue, 13 May 2025 10:02:54 +0100</pubDate>
           
-          <guid>https://abelgvidal.github.io/posts/2025-14-05-k/</guid>
+          <guid>https://abelgvidal.github.io/posts/2025-14-05-backoff-index/</guid>
           <description>Kubernetes v1.33 is coming with Backoff limit per index.
 Backoff limWHAT? Ideally, in kubernetes your workload should tolerate transient failures and continue running. By transient failures I mean network congestions, nodes with problems etc.
 To achieve failure tolerance in a Kubernetes Job, you can set the spec.backoffLimit field. This field specifies the total number of tolerated failures. Why should there be a limit? Well, you don’t want cascade failures, for example.</description>
