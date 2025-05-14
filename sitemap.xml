@@ -3,12 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://abelgvidal.github.io/</loc>
-    <lastmod>2025-05-14T20:02:54+01:00</lastmod>
+    <lastmod>2025-05-13T20:02:54+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://abelgvidal.github.io/tags/iwl/</loc>
+    <lastmod>2025-05-13T20:02:54+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://abelgvidal.github.io/tags/networking/</loc>
+    <lastmod>2025-05-13T20:02:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://abelgvidal.github.io/posts/</loc>
-    <lastmod>2025-05-14T20:02:54+01:00</lastmod>
+    <lastmod>2025-05-13T20:02:54+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://abelgvidal.github.io/tags/</loc>
+    <lastmod>2025-05-13T20:02:54+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://abelgvidal.github.io/tags/tailscale/</loc>
+    <lastmod>2025-05-13T20:02:54+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://abelgvidal.github.io/posts/use-tailscale-for-personal-web/</loc>
+    <lastmod>2025-05-13T20:02:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -18,11 +43,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://abelgvidal.github.io/posts/franny/</loc>
-    <lastmod>2025-04-09T20:02:54+01:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://abelgvidal.github.io/tags/</loc>
     <lastmod>2025-04-09T20:02:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
