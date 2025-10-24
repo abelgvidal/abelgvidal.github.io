@@ -2,196 +2,206 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://abelgvidal.github.io/</loc>
+    <loc>https://blog.lpsz.org/tags/diary/</loc>
+    <lastmod>2025-10-24T10:02:54+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.lpsz.org/</loc>
+    <lastmod>2025-10-24T10:02:54+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.lpsz.org/posts/</loc>
+    <lastmod>2025-10-24T10:02:54+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.lpsz.org/tags/</loc>
+    <lastmod>2025-10-24T10:02:54+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.lpsz.org/posts/2025-10-24-test/</loc>
+    <lastmod>2025-10-24T10:02:54+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.lpsz.org/tags/iwl/</loc>
     <lastmod>2025-05-13T20:02:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/iwl/</loc>
+    <loc>https://blog.lpsz.org/tags/networking/</loc>
     <lastmod>2025-05-13T20:02:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/networking/</loc>
+    <loc>https://blog.lpsz.org/tags/tailscale/</loc>
     <lastmod>2025-05-13T20:02:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/posts/</loc>
+    <loc>https://blog.lpsz.org/posts/use-tailscale-for-personal-web/</loc>
     <lastmod>2025-05-13T20:02:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/</loc>
-    <lastmod>2025-05-13T20:02:54+01:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://abelgvidal.github.io/tags/tailscale/</loc>
-    <lastmod>2025-05-13T20:02:54+01:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://abelgvidal.github.io/posts/use-tailscale-for-personal-web/</loc>
-    <lastmod>2025-05-13T20:02:54+01:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://abelgvidal.github.io/posts/2025-14-05-backoff-index/</loc>
+    <loc>https://blog.lpsz.org/posts/2025-14-05-backoff-index/</loc>
     <lastmod>2025-05-13T10:02:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/kubernetes/</loc>
+    <loc>https://blog.lpsz.org/tags/kubernetes/</loc>
     <lastmod>2025-05-13T10:02:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/til/</loc>
+    <loc>https://blog.lpsz.org/tags/til/</loc>
     <lastmod>2025-05-13T10:02:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/hugo/</loc>
+    <loc>https://blog.lpsz.org/tags/hugo/</loc>
     <lastmod>2025-04-13T20:02:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/posts/filter-tags-in-hugo-template/</loc>
+    <loc>https://blog.lpsz.org/posts/filter-tags-in-hugo-template/</loc>
     <lastmod>2025-04-13T20:02:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/books/</loc>
+    <loc>https://blog.lpsz.org/tags/books/</loc>
     <lastmod>2025-04-09T20:02:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/posts/franny/</loc>
+    <loc>https://blog.lpsz.org/posts/franny/</loc>
     <lastmod>2025-04-09T20:02:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/literature/</loc>
+    <loc>https://blog.lpsz.org/tags/literature/</loc>
     <lastmod>2025-04-09T20:02:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/chess/</loc>
+    <loc>https://blog.lpsz.org/tags/chess/</loc>
     <lastmod>2025-03-01T00:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/posts/knight-petrov/</loc>
+    <loc>https://blog.lpsz.org/posts/knight-petrov/</loc>
     <lastmod>2025-03-01T00:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/petrov/</loc>
+    <loc>https://blog.lpsz.org/tags/petrov/</loc>
     <lastmod>2025-03-01T00:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/posts/fooled-by-randomness/</loc>
+    <loc>https://blog.lpsz.org/posts/fooled-by-randomness/</loc>
     <lastmod>2025-02-12T20:02:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/probability/</loc>
+    <loc>https://blog.lpsz.org/tags/probability/</loc>
     <lastmod>2025-02-12T20:02:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/posts/eatitself/</loc>
+    <loc>https://blog.lpsz.org/posts/eatitself/</loc>
     <lastmod>2025-01-20T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/posts/optionalrandom/</loc>
+    <loc>https://blog.lpsz.org/posts/optionalrandom/</loc>
     <lastmod>2025-01-20T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/cognitive-bias/</loc>
+    <loc>https://blog.lpsz.org/tags/cognitive-bias/</loc>
     <lastmod>2025-01-20T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/ia/</loc>
+    <loc>https://blog.lpsz.org/tags/ia/</loc>
     <lastmod>2025-01-20T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/bash/</loc>
+    <loc>https://blog.lpsz.org/tags/bash/</loc>
     <lastmod>2025-01-03T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/linux/</loc>
+    <loc>https://blog.lpsz.org/tags/linux/</loc>
     <lastmod>2025-01-03T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/programming/</loc>
+    <loc>https://blog.lpsz.org/tags/programming/</loc>
     <lastmod>2025-01-03T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/shell/</loc>
+    <loc>https://blog.lpsz.org/tags/shell/</loc>
     <lastmod>2025-01-03T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/posts/recursive-bash/</loc>
+    <loc>https://blog.lpsz.org/posts/recursive-bash/</loc>
     <lastmod>2025-01-03T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/ethics/</loc>
+    <loc>https://blog.lpsz.org/tags/ethics/</loc>
     <lastmod>2024-12-23T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/posts/eticaparaingenieros/</loc>
+    <loc>https://blog.lpsz.org/posts/eticaparaingenieros/</loc>
     <lastmod>2024-12-23T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/google/</loc>
+    <loc>https://blog.lpsz.org/tags/google/</loc>
     <lastmod>2024-12-15T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/posts/obsidian-wavenet/</loc>
+    <loc>https://blog.lpsz.org/posts/obsidian-wavenet/</loc>
     <lastmod>2024-12-15T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/note-taking/</loc>
+    <loc>https://blog.lpsz.org/tags/note-taking/</loc>
     <lastmod>2024-12-15T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/obsidian/</loc>
+    <loc>https://blog.lpsz.org/tags/obsidian/</loc>
     <lastmod>2024-12-15T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/tts/</loc>
+    <loc>https://blog.lpsz.org/tags/tts/</loc>
     <lastmod>2024-12-15T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/tags/wavenet/</loc>
+    <loc>https://blog.lpsz.org/tags/wavenet/</loc>
     <lastmod>2024-12-15T20:03:54+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/posts/aboutme/</loc>
+    <loc>https://blog.lpsz.org/posts/aboutme/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://abelgvidal.github.io/categories/</loc>
+    <loc>https://blog.lpsz.org/categories/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>

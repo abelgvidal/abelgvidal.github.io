@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Abel&#39;s notes - TIL </title>
+    <title>lpsz - let&#39;s pretend servers are zombies - TIL </title>
     <link rel="stylesheet" type="text/css" href="/css/fonts.css">
     <link rel="stylesheet" type="text/css" href="/css/fontawesome.css">
     
@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Abel González Vidal">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="alternate" type="application/rss+xml" href="https://abelgvidal.github.io/tags/til/index.xml" title="Abel's notes" />
+    <link rel="alternate" type="application/rss+xml" href="https://blog.lpsz.org/tags/til/index.xml" title="lpsz - let's pretend servers are zombies" />
     
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-37PFXMQRGD"></script>
 <script>
@@ -35,7 +35,7 @@
 <body>
 <header class="page-header">
     <div class="myname"> 
-        <h2><a href="https://abelgvidal.github.io/">Abel&#39;s notes</a></h2> 
+        <h2><a href="https://blog.lpsz.org/">Abel&#39;s notes</a></h2> 
     </div>
     <nav>
         <ul class="navbar">
@@ -67,7 +67,7 @@
     <h1>Tag: TIL</h1>
     <article class="archive-item">
                 <article class="blog-post-summary">
-    <h3 class="blog-post-title"><a href="https://abelgvidal.github.io/posts/2025-14-05-backoff-index/">Backoff limit per index</a></h3>
+    <h3 class="blog-post-title"><a href="https://blog.lpsz.org/posts/2025-14-05-backoff-index/">Backoff limit per index</a></h3>
 
     <p class="blog-post-info">Posted: <time>2025-05-13</time>
     
@@ -83,13 +83,13 @@
 </p>
     <p>Kubernetes v1.33 is coming with Backoff limit per index.
 Backoff limWHAT? Ideally, in kubernetes your workload should tolerate transient failures and continue running. By transient failures I mean network congestions, nodes with problems etc.
-To achieve failure tolerance in a Kubernetes Job, you can set the spec.backoffLimit field. This field specifies the total number of tolerated failures. Why should there be a limit? Well, you don&rsquo;t want cascade failures, for example.<span> <a href="https://abelgvidal.github.io/posts/2025-14-05-backoff-index/">Read more...</a></span>
+To achieve failure tolerance in a Kubernetes Job, you can set the spec.backoffLimit field. This field specifies the total number of tolerated failures. Why should there be a limit? Well, you don&rsquo;t want cascade failures, for example.<span> <a href="https://blog.lpsz.org/posts/2025-14-05-backoff-index/">Read more...</a></span>
     </p>
 </article>
 
             </article><article class="archive-item">
                 <article class="blog-post-summary">
-    <h3 class="blog-post-title"><a href="https://abelgvidal.github.io/posts/filter-tags-in-hugo-template/">Hugo: filter post by tag</a></h3>
+    <h3 class="blog-post-title"><a href="https://blog.lpsz.org/posts/filter-tags-in-hugo-template/">Hugo: filter post by tag</a></h3>
 
     <p class="blog-post-info">Posted: <time>2025-04-13</time>
     
@@ -105,7 +105,7 @@ To achieve failure tolerance in a Kubernetes Job, you can set the spec.backoffLi
 </p>
     <p>I wanted to stop showing in the frontpage of this blog powered by (Hugo) the posts tagged as &ldquo;TIL&rdquo; or &ldquo;IWL&rdquo;.
 My theme template is
-{{ $blogPages := where .Site.RegularPages.ByDate.Reverse &#34;.Type&#34; &#34;in&#34; .Site.Params.mainSections }} I tried with &ldquo;intersect&rdquo; and &ldquo;where&rdquo; but it did not work, not sure if it is because my Hugo version is old but, anyway, I was too lazy to upgrade Hugo (and adapt all templates, breaking changes, etc) so this simple code made my day:<span> <a href="https://abelgvidal.github.io/posts/filter-tags-in-hugo-template/">Read more...</a></span>
+{{ $blogPages := where .Site.RegularPages.ByDate.Reverse &#34;.Type&#34; &#34;in&#34; .Site.Params.mainSections }} I tried with &ldquo;intersect&rdquo; and &ldquo;where&rdquo; but it did not work, not sure if it is because my Hugo version is old but, anyway, I was too lazy to upgrade Hugo (and adapt all templates, breaking changes, etc) so this simple code made my day:<span> <a href="https://blog.lpsz.org/posts/filter-tags-in-hugo-template/">Read more...</a></span>
     </p>
 </article>
 

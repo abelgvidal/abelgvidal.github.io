@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Abel&#39;s notes</title>
-        <link>https://abelgvidal.github.io/tags/wavenet/</link>
-        <description>Latest blog posts from Abel&#39;s notes</description>
+        <title>lpsz - let&#39;s pretend servers are zombies</title>
+        <link>https://blog.lpsz.org/tags/wavenet/</link>
+        <description>Latest blog posts from lpsz - let&#39;s pretend servers are zombies</description>
 
         
         <language>en-us</language>
@@ -22,26 +22,35 @@
         
 
         
-        <atom:link href="https://abelgvidal.github.io/tags/wavenet/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.lpsz.org/tags/wavenet/index.xml" rel="self" type="application/rss+xml" />
         
 
         
             
         <item>
+          <title>Test</title>
+          <link>https://blog.lpsz.org/posts/2025-10-24-test/</link>
+          <pubDate>Fri, 24 Oct 2025 10:02:54 +0100</pubDate>
+          
+          <guid>https://blog.lpsz.org/posts/2025-10-24-test/</guid>
+          <description>This is a test, a tiny test.</description>
+        </item>
+            
+        <item>
           <title>Use tailscale to protect a personal website</title>
-          <link>https://abelgvidal.github.io/posts/use-tailscale-for-personal-web/</link>
+          <link>https://blog.lpsz.org/posts/use-tailscale-for-personal-web/</link>
           <pubDate>Tue, 13 May 2025 20:02:54 +0100</pubDate>
           
-          <guid>https://abelgvidal.github.io/posts/use-tailscale-for-personal-web/</guid>
+          <guid>https://blog.lpsz.org/posts/use-tailscale-for-personal-web/</guid>
           <description>How to use tailscale to protect a personal website …</description>
         </item>
             
         <item>
           <title>Backoff limit per index</title>
-          <link>https://abelgvidal.github.io/posts/2025-14-05-backoff-index/</link>
+          <link>https://blog.lpsz.org/posts/2025-14-05-backoff-index/</link>
           <pubDate>Tue, 13 May 2025 10:02:54 +0100</pubDate>
           
-          <guid>https://abelgvidal.github.io/posts/2025-14-05-backoff-index/</guid>
+          <guid>https://blog.lpsz.org/posts/2025-14-05-backoff-index/</guid>
           <description>Kubernetes v1.33 is coming with Backoff limit per index.
 Backoff limWHAT? Ideally, in kubernetes your workload should tolerate transient failures and continue running. By transient failures I mean network congestions, nodes with problems etc.
 To achieve failure tolerance in a Kubernetes Job, you can set the spec.backoffLimit field. This field specifies the total number of tolerated failures. Why should there be a limit? Well, you don’t want cascade failures, for example.</description>
@@ -49,10 +58,10 @@ To achieve failure tolerance in a Kubernetes Job, you can set the spec.backoffLi
             
         <item>
           <title>Hugo: filter post by tag</title>
-          <link>https://abelgvidal.github.io/posts/filter-tags-in-hugo-template/</link>
+          <link>https://blog.lpsz.org/posts/filter-tags-in-hugo-template/</link>
           <pubDate>Sun, 13 Apr 2025 20:02:54 +0100</pubDate>
           
-          <guid>https://abelgvidal.github.io/posts/filter-tags-in-hugo-template/</guid>
+          <guid>https://blog.lpsz.org/posts/filter-tags-in-hugo-template/</guid>
           <description>I wanted to stop showing in the frontpage of this blog powered by (Hugo) the posts tagged as “TIL” or “IWL”.
 My theme template is
 {{ $blogPages := where .Site.RegularPages.ByDate.Reverse &quot;.Type&quot; &quot;in&quot; .Site.Params.mainSections }} I tried with “intersect” and “where” but it did not work, not sure if it is because my Hugo version is old but, anyway, I was too lazy to upgrade Hugo (and adapt all templates, breaking changes, etc) so this simple code made my day:</description>
@@ -60,10 +69,10 @@ My theme template is
             
         <item>
           <title>Franny and Zooey</title>
-          <link>https://abelgvidal.github.io/posts/franny/</link>
+          <link>https://blog.lpsz.org/posts/franny/</link>
           <pubDate>Wed, 09 Apr 2025 20:02:54 +0100</pubDate>
           
-          <guid>https://abelgvidal.github.io/posts/franny/</guid>
+          <guid>https://blog.lpsz.org/posts/franny/</guid>
           <description>Warning: This review contains spoilers
 This book is special because it contrasts Zen teachings with 1950s consumer America.
 We meet Franny Glass, a young woman who belongs to a family of gifted intellectuals. She feels overwhelmed by life’s superficiality and seeks answers in spirituality. The story is divided into two parts showing important moments in the lives of Franny and her brother Zooey.
@@ -72,30 +81,30 @@ A note about the author: Salinger was transformed by his experience in World War
             
         <item>
           <title>Knight trap in the Petrov Defense</title>
-          <link>https://abelgvidal.github.io/posts/knight-petrov/</link>
+          <link>https://blog.lpsz.org/posts/knight-petrov/</link>
           <pubDate>Sat, 01 Mar 2025 00:03:54 +0100</pubDate>
           
-          <guid>https://abelgvidal.github.io/posts/knight-petrov/</guid>
+          <guid>https://blog.lpsz.org/posts/knight-petrov/</guid>
           <description>Knight trap in the Petrov Defense As an improving chess player, I’m always excited when I can execute a clean tactical sequence. Recently, I played a game where I was able to exploit one of the classic traps in the Petrov Defense. I’d like to share this experience and what I learned from it.
 The Game That Made My Day 1. e4 e5 2. Nf3 Nf6 3. Nxe5 Nxe4 4. d3 Nxf2?</description>
         </item>
             
         <item>
           <title>Fooled by randomness</title>
-          <link>https://abelgvidal.github.io/posts/fooled-by-randomness/</link>
+          <link>https://blog.lpsz.org/posts/fooled-by-randomness/</link>
           <pubDate>Wed, 12 Feb 2025 20:02:54 +0100</pubDate>
           
-          <guid>https://abelgvidal.github.io/posts/fooled-by-randomness/</guid>
+          <guid>https://blog.lpsz.org/posts/fooled-by-randomness/</guid>
           <description>Fooled by randomness These are my notes for the book “Fooled by Randomness” by Nassim Taleb.
 The thesis of the book is that when we look at the past we find things that are not there, the past is much more random than our vision. This is called the Hindsight bias. So we have to be aware that when people relate the past usually they tend to create post-hoc rationalizations and retrofitted explanations.</description>
         </item>
             
         <item>
           <title>AI Eats Its Own Tail</title>
-          <link>https://abelgvidal.github.io/posts/eatitself/</link>
+          <link>https://blog.lpsz.org/posts/eatitself/</link>
           <pubDate>Mon, 20 Jan 2025 20:03:54 +0100</pubDate>
           
-          <guid>https://abelgvidal.github.io/posts/eatitself/</guid>
+          <guid>https://blog.lpsz.org/posts/eatitself/</guid>
           <description>Seeing the evolution of StackOverflow, which seems to be declining due to the rise of ChatGPT and similar tools, I wonder about the long-term viability of projects like this.
 On the other hand, where will AIs get their information if these projects disappear? Their answers could degrade significantly without such resources.
 Could we be stuck in a cycle where AI destroys these collaborative platforms, worsens after losing them, then these platforms revive because this is information that is needed (and now is missing), only to decline again as AI uses their information to present it in a more convenient way?</description>
@@ -103,20 +112,20 @@ Could we be stuck in a cycle where AI destroys these collaborative platforms, wo
             
         <item>
           <title>Be wrong in Probability Like a Pro</title>
-          <link>https://abelgvidal.github.io/posts/optionalrandom/</link>
+          <link>https://blog.lpsz.org/posts/optionalrandom/</link>
           <pubDate>Mon, 20 Jan 2025 20:03:54 +0100</pubDate>
           
-          <guid>https://abelgvidal.github.io/posts/optionalrandom/</guid>
+          <guid>https://blog.lpsz.org/posts/optionalrandom/</guid>
           <description>In her book “Randomness,” Deborah Bennett presents an example that illustrates how bad we are at calculating probabilities, even highly trained professionals. A group of doctors received this question:
 The test of a disease has a 5% false positive rate. The disease affects 1 in 1000 people in the population. People are tested randomly, whether they are suspected to be sick or not. A particular patient’s test is positive. What is the probability that this patient actually has the disease?</description>
         </item>
             
         <item>
           <title>Why &#39;type type type type&#39; runs three times in Bash</title>
-          <link>https://abelgvidal.github.io/posts/recursive-bash/</link>
+          <link>https://blog.lpsz.org/posts/recursive-bash/</link>
           <pubDate>Fri, 03 Jan 2025 20:03:54 +0100</pubDate>
           
-          <guid>https://abelgvidal.github.io/posts/recursive-bash/</guid>
+          <guid>https://blog.lpsz.org/posts/recursive-bash/</guid>
           <description>In Bash, when we run the command type type type type, we observe a peculiar behavior: it executes three times instead of once or four times. This phenomenon is fascinating and is due to how Bash processes arguments and how the type command specifically works.
 The behavior of type The type command is a Bash builtin used to determine how Bash would interpret a command name. When we execute:
 type type type type We get an output similar to this:</description>
@@ -124,10 +133,10 @@ type type type type We get an output similar to this:</description>
             
         <item>
           <title>Ethics for Engineering</title>
-          <link>https://abelgvidal.github.io/posts/eticaparaingenieros/</link>
+          <link>https://blog.lpsz.org/posts/eticaparaingenieros/</link>
           <pubDate>Mon, 23 Dec 2024 20:03:54 +0100</pubDate>
           
-          <guid>https://abelgvidal.github.io/posts/eticaparaingenieros/</guid>
+          <guid>https://blog.lpsz.org/posts/eticaparaingenieros/</guid>
           <description>These are my reading notes for the book “Ética para ingenieros” by Galo Bilbao Alberdi, Francisco Javier Fuertes Pérez and José Mª Guibert Ucín.
 The Engineering Profession Different sociological perspectives explore the meaning of professions, from traditional occupations like doctors or lawyers to modern professions requiring university education. The fundamental aspect of a profession is its unique service to society, a vocation that has intensified with modernity through “professionalization.”
 There are notable concerns about the excesses of this process, such as the obsession with titles rather than service to society, distinguishing between “bad professionalism” and “good professionalism” oriented toward the community.</description>
@@ -135,22 +144,24 @@ There are notable concerns about the excesses of this process, such as the obses
             
         <item>
           <title>Making Obsidian Talk with Google&#39;s Fancy Wavenet Voices</title>
-          <link>https://abelgvidal.github.io/posts/obsidian-wavenet/</link>
+          <link>https://blog.lpsz.org/posts/obsidian-wavenet/</link>
           <pubDate>Sun, 15 Dec 2024 20:03:54 +0100</pubDate>
           
-          <guid>https://abelgvidal.github.io/posts/obsidian-wavenet/</guid>
+          <guid>https://blog.lpsz.org/posts/obsidian-wavenet/</guid>
           <description>I’m sharing a little hack I put together. As a hardcore Obsidian user, I was getting frustrated with the available text-to-speech options. I really wanted to use Google’s Wavenet voices because they sound amazing, but couldn’t find a plugin that did exactly what I wanted. So I sorted it out myself.
 I cobbled together a hack using Google Cloud’s Text-to-Speech API and Obsidian’s Shell Commands plugin. Here’s how you can do it too (assuming you’re on Linux, if not you need some adjustment):</description>
         </item>
             
         <item>
           <title>About Me</title>
-          <link>https://abelgvidal.github.io/posts/aboutme/</link>
+          <link>https://blog.lpsz.org/posts/aboutme/</link>
           <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
           
-          <guid>https://abelgvidal.github.io/posts/aboutme/</guid>
+          <guid>https://blog.lpsz.org/posts/aboutme/</guid>
           <description>Hy! My name is Abel González Vidal. I work as a platform engineer lead at Nextail.
-My CV is available in Linkedin.</description>
+My CV is available in Linkedin.
+If you are curious about my personality, these are my results in OCEAN model:
+Openness: 76th percentile Conscientiousness: 66th percentile Extraversion: 18th percentile Agreeableness: 59th percentile Neuroticism: 61st percentile “It is the mark of an educated mind to be able to entertain a thought without accepting it.” - Aristotle</description>
         </item>
             
         
