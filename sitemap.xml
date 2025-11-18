@@ -2,11 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.lpsz.org/posts/2025-14-05-backoff-index/</loc>
-    <lastmod>2025-11-18T10:10:04+01:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://blog.lpsz.org/</loc>
     <lastmod>2025-11-18T10:10:04+01:00</lastmod>
     <changefreq>always</changefreq>
@@ -23,6 +18,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.lpsz.org/tags/</loc>
+    <lastmod>2025-11-18T10:10:04+01:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.lpsz.org/posts/2025-11-18-rhoe/</loc>
     <lastmod>2025-11-18T10:10:04+01:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
