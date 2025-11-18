@@ -18,7 +18,7 @@
         
 
         
-        <lastBuildDate>Fri, 24 Oct 2025 10:02:54 +0100</lastBuildDate>
+        <lastBuildDate>Tue, 18 Nov 2025 10:10:04 +0100</lastBuildDate>
         
 
         
@@ -28,12 +28,12 @@
         
             
         <item>
-          <title>Test</title>
-          <link>https://blog.lpsz.org/posts/2025-10-24-test/</link>
-          <pubDate>Fri, 24 Oct 2025 10:02:54 +0100</pubDate>
+          <title>La realidad conversacional</title>
+          <link>https://blog.lpsz.org/posts/2025-14-05-backoff-index/</link>
+          <pubDate>Tue, 18 Nov 2025 10:10:04 +0100</pubDate>
           
-          <guid>https://blog.lpsz.org/posts/2025-10-24-test/</guid>
-          <description>This is a test, a tiny test.</description>
+          <guid>https://blog.lpsz.org/posts/2025-14-05-backoff-index/</guid>
+          <description>David White, que es una interesante mezcla de poeta, filósofo y biólogo, ha escrito sobre un concepto que me ha llamdo la atención: la naturaleza conversacional de la realidad. Es una idea muy intuitiva: la naturaleza no es un bloque al que te enfrentas y tienes que cambiar en sentido único; la naturaleza es una serie de conversaciones donde recibes y das, y cada una de esas interacciones modifica la realidad, de manera que no puedes enfrentarte a las cosas de manera absoluta sino considerar iteraciones que te irán enseñando que es lo que tienes que hacer más adelante, esto es, es más un descubrimiento que una conquista.</description>
         </item>
             
         <item>
@@ -43,17 +43,6 @@
           
           <guid>https://blog.lpsz.org/posts/use-tailscale-for-personal-web/</guid>
           <description>How to use tailscale to protect a personal website …</description>
-        </item>
-            
-        <item>
-          <title>Backoff limit per index</title>
-          <link>https://blog.lpsz.org/posts/2025-14-05-backoff-index/</link>
-          <pubDate>Tue, 13 May 2025 10:02:54 +0100</pubDate>
-          
-          <guid>https://blog.lpsz.org/posts/2025-14-05-backoff-index/</guid>
-          <description>Kubernetes v1.33 is coming with Backoff limit per index.
-Backoff limWHAT? Ideally, in kubernetes your workload should tolerate transient failures and continue running. By transient failures I mean network congestions, nodes with problems etc.
-To achieve failure tolerance in a Kubernetes Job, you can set the spec.backoffLimit field. This field specifies the total number of tolerated failures. Why should there be a limit? Well, you don’t want cascade failures, for example.</description>
         </item>
             
         <item>
@@ -160,8 +149,7 @@ I cobbled together a hack using Google Cloud’s Text-to-Speech API and Obsidian
           <guid>https://blog.lpsz.org/posts/aboutme/</guid>
           <description>Hy! My name is Abel González Vidal. I work as a platform engineer lead at Nextail.
 My CV is available in Linkedin.
-If you are curious about my personality, these are my results in OCEAN model:
-Openness: 76th percentile Conscientiousness: 66th percentile Extraversion: 18th percentile Agreeableness: 59th percentile Neuroticism: 61st percentile “It is the mark of an educated mind to be able to entertain a thought without accepting it.” - Aristotle</description>
+“It is the mark of an educated mind to be able to entertain a thought without accepting it.” - Aristotle</description>
         </item>
             
         
