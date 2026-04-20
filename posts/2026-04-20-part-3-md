@@ -15,7 +15,7 @@ Apr 12 17:03:11 lpsz sshd[1432]: Failed password for root from 218.92.0.190 port
 Apr 12 17:03:15 lpsz sshd[1433]: Failed password for root from 218.92.0.190 port 53413 ssh2
 Apr 12 17:03:18 lpsz sshd[1434]: Failed password for root from 218.92.0.190 port 53414 ssh2
 ```
-
+  
 Welcome to the internet. Someone has been hammering your server since the moment you exposed it. This is completely normal — automated scanners hit every public IP constantly, probing for weak passwords and default credentials. But that's a story for another day.
 
 What I want to focus on is something less alarming: where are those log lines coming from? It must be reading from some log file, right? Maybe `/var/log/sshd.log` or something like that? Not quite. `systemctl` isn't reading any service-specific log file. There isn't one.
