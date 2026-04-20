@@ -4,7 +4,7 @@ date = 2026-04-19T16:58:00+01:00
 draft = false
 +++
 
-You've just set up a VPS. A few days in, out of curiosity, you check what SSH has been up to:
+You've just set up a VPS. A few days later, out of curiosity, you check what SSH has been up to:
 
 ```bash
 $ systemctl status sshd
